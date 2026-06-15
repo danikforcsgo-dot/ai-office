@@ -1,0 +1,572 @@
+{
+  "balance": 13172.26,
+  "trades": [
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.13900756835938,
+      "size": 100000.0,
+      "entry_time": "2026-06-15T13:04:14.369305",
+      "exit_time": "2026-06-15T13:04:17.656362",
+      "pnl": 700.38,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.13900756835938,
+      "size": 107003.7841796875,
+      "entry_time": "2026-06-15T13:04:21.906450",
+      "exit_time": "2026-06-15T13:04:39.661223",
+      "pnl": 749.43,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1300048828125,
+      "exit_price": 160.14100646972656,
+      "size": 114498.09828773141,
+      "entry_time": "2026-06-15T13:04:42.323368",
+      "exit_time": "2026-06-15T13:04:45.661364",
+      "pnl": 1259.66,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.14199829101562,
+      "exit_price": 160.1320037841797,
+      "size": 127094.70608580488,
+      "entry_time": "2026-06-15T13:04:48.342308",
+      "exit_time": "2026-06-15T13:04:49.201518",
+      "pnl": -1270.25,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.14100646972656,
+      "size": 114392.21699794443,
+      "entry_time": "2026-06-15T13:04:49.202358",
+      "exit_time": "2026-06-15T13:04:50.536492",
+      "pnl": 1029.84,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.14100646972656,
+      "size": 124690.58858436826,
+      "entry_time": "2026-06-15T13:04:55.649842",
+      "exit_time": "2026-06-15T13:04:55.662293",
+      "pnl": 1122.55,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.14100646972656,
+      "exit_price": 160.1320037841797,
+      "size": 135916.09018116657,
+      "entry_time": "2026-06-15T13:05:02.131791",
+      "exit_time": "2026-06-15T13:05:03.629878",
+      "pnl": -1223.61,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13099670410156,
+      "exit_price": 160.13400268554688,
+      "size": 123679.99197454908,
+      "entry_time": "2026-06-15T13:05:08.331196",
+      "exit_time": "2026-06-15T13:05:08.450442",
+      "pnl": 371.78,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13400268554688,
+      "exit_price": 160.13800048828125,
+      "size": 127397.78958486802,
+      "entry_time": "2026-06-15T13:05:08.451488",
+      "exit_time": "2026-06-15T13:05:09.632508",
+      "pnl": 509.31,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.13800048828125,
+      "size": 132490.90190042517,
+      "entry_time": "2026-06-15T13:05:19.560172",
+      "exit_time": "2026-06-15T13:05:19.610690",
+      "pnl": 794.51,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13299560546875,
+      "exit_price": 160.13900756835938,
+      "size": 140435.98924888513,
+      "entry_time": "2026-06-15T13:05:22.548342",
+      "exit_time": "2026-06-15T13:05:37.777261",
+      "pnl": 844.3,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13900756835938,
+      "exit_price": 160.13499450683594,
+      "size": 148878.9488076102,
+      "entry_time": "2026-06-15T13:05:42.924491",
+      "exit_time": "2026-06-15T13:05:45.658882",
+      "pnl": -597.46,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13099670410156,
+      "exit_price": 160.13999938964844,
+      "size": 142904.3449965138,
+      "entry_time": "2026-06-15T13:05:49.612160",
+      "exit_time": "2026-06-15T13:05:49.640091",
+      "pnl": 1286.52,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13099670410156,
+      "exit_price": 160.13999938964844,
+      "size": 155769.57380937133,
+      "entry_time": "2026-06-15T13:05:55.940524",
+      "exit_time": "2026-06-15T13:05:59.742909",
+      "pnl": 1402.34,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.14100646972656,
+      "exit_price": 160.1320037841797,
+      "size": 169793.01871713635,
+      "entry_time": "2026-06-15T13:06:01.878509",
+      "exit_time": "2026-06-15T13:06:03.916800",
+      "pnl": -1528.59,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.13900756835938,
+      "size": 154507.08716148598,
+      "entry_time": "2026-06-15T13:06:07.695162",
+      "exit_time": "2026-06-15T13:06:13.434183",
+      "pnl": 1082.13,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13900756835938,
+      "exit_price": 160.1320037841797,
+      "size": 165328.4300885981,
+      "entry_time": "2026-06-15T13:06:13.435433",
+      "exit_time": "2026-06-15T13:06:17.632030",
+      "pnl": -1157.92,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13999938964844,
+      "exit_price": 160.13099670410156,
+      "size": 153749.18365752717,
+      "entry_time": "2026-06-15T13:06:19.279953",
+      "exit_time": "2026-06-15T13:06:24.844314",
+      "pnl": -1384.16,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13099670410156,
+      "exit_price": 160.13900756835938,
+      "size": 139907.62812195267,
+      "entry_time": "2026-06-15T13:06:24.845671",
+      "exit_time": "2026-06-15T13:06:27.713306",
+      "pnl": 1120.78,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13999938964844,
+      "exit_price": 160.1320037841797,
+      "size": 151115.4382971274,
+      "entry_time": "2026-06-15T13:06:31.106990",
+      "exit_time": "2026-06-15T13:06:31.601478",
+      "pnl": -1208.26,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.13600158691406,
+      "size": 139032.84404851674,
+      "entry_time": "2026-06-15T13:06:36.725390",
+      "exit_time": "2026-06-15T13:06:43.690038",
+      "pnl": 555.83,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.13600158691406,
+      "size": 144591.10288956767,
+      "entry_time": "2026-06-15T13:06:47.851832",
+      "exit_time": "2026-06-15T13:06:48.256359",
+      "pnl": 578.05,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13600158691406,
+      "exit_price": 160.13999938964844,
+      "size": 150371.5699545498,
+      "entry_time": "2026-06-15T13:06:48.257839",
+      "exit_time": "2026-06-15T13:06:49.629477",
+      "pnl": 601.16,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.13600158691406,
+      "size": 156383.1286899154,
+      "entry_time": "2026-06-15T13:06:53.929849",
+      "exit_time": "2026-06-15T13:07:07.645531",
+      "pnl": 625.19,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13600158691406,
+      "exit_price": 160.13999938964844,
+      "size": 162635.01768478204,
+      "entry_time": "2026-06-15T13:07:10.765697",
+      "exit_time": "2026-06-15T13:07:11.622005",
+      "pnl": 650.18,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13999938964844,
+      "exit_price": 160.1320037841797,
+      "size": 169136.8448688355,
+      "entry_time": "2026-06-15T13:07:16.758048",
+      "exit_time": "2026-06-15T13:07:17.603932",
+      "pnl": -1352.35,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.1320037841797,
+      "exit_price": 160.14100646972656,
+      "size": 155613.33005083166,
+      "entry_time": "2026-06-15T13:07:22.459749",
+      "exit_time": "2026-06-15T13:07:23.668231",
+      "pnl": 1400.94,
+      "result": "WIN",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "TP"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13999938964844,
+      "exit_price": 160.13299560546875,
+      "size": 169622.70882432882,
+      "entry_time": "2026-06-15T13:07:28.083399",
+      "exit_time": "2026-06-15T13:07:31.661651",
+      "pnl": -1188.0,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.13999938964844,
+      "exit_price": 160.13499450683594,
+      "size": 157742.70037853307,
+      "entry_time": "2026-06-15T13:07:34.811308",
+      "exit_time": "2026-06-15T13:07:36.372470",
+      "pnl": -789.48,
+      "result": "LOSS",
+      "signal_strength": 3,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/CAD",
+      "side": "BUY",
+      "entry_price": 1.3970600366592407,
+      "exit_price": 1.3968000411987305,
+      "size": 1430126.0844721512,
+      "entry_time": "2026-06-15T13:32:26.089515",
+      "exit_time": "2026-06-15T13:32:37.142153",
+      "pnl": -371.83,
+      "result": "LOSS",
+      "signal_strength": 5,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH",
+        "News POSITIVE",
+        "Multi-TF aligned (BUY)"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/CAD",
+      "side": "BUY",
+      "entry_price": 1.3970600366592407,
+      "exit_price": 1.3967000246047974,
+      "size": 1394639.181953712,
+      "entry_time": "2026-06-15T13:33:11.689350",
+      "exit_time": "2026-06-15T13:33:56.230867",
+      "pnl": -502.09,
+      "result": "LOSS",
+      "signal_strength": 5,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH",
+        "News POSITIVE",
+        "Multi-TF aligned (BUY)"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/CHF",
+      "side": "BUY",
+      "entry_price": 0.7926599979400635,
+      "exit_price": 0.7925400137901306,
+      "size": 2458045.9108950687,
+      "entry_time": "2026-06-15T13:33:14.485067",
+      "exit_time": "2026-06-15T13:34:54.319772",
+      "pnl": -294.93,
+      "result": "LOSS",
+      "signal_strength": 4,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH",
+        "News POSITIVE"
+      ],
+      "exit_reason": "SL"
+    },
+    {
+      "pair": "USD/JPY",
+      "side": "BUY",
+      "entry_price": 160.17799377441406,
+      "exit_price": 160.17100524902344,
+      "size": 92106.33333333334,
+      "entry_time": "2026-06-15T15:01:07.138394",
+      "exit_time": "2026-06-15T15:01:16.803258",
+      "pnl": -643.69,
+      "result": "LOSS",
+      "signal_strength": 4,
+      "confluence": [
+        "2 BUY signals",
+        "2 departments BULLISH",
+        "News POSITIVE"
+      ],
+      "exit_reason": "SL"
+    }
+  ]
+}

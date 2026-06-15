@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Office - Forex Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #131722;
+            --bg-secondary: #1e222d;
+            --bg-tertiary: #2a2e39;
+            --bg-hover: #363a45;
+            --text-primary: #d1d4dc;
+            --text-secondary: #787b86;
+            --text-tertiary: #4c525e;
+            --green: #26a69a;
+            --green-bg: rgba(38,166,154,0.12);
+            --red: #ef5350;
+            --red-bg: rgba(239,83,80,0.12);
+            --blue: #2962ff;
+            --blue-bg: rgba(41,98,255,0.12);
+            --yellow: #ff9800;
+            --yellow-bg: rgba(255,152,0,0.12);
+            --cyan: #00bcd4;
+            --border: #2a2e39;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg-primary); color: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; font-size: 13px; line-height: 1.5; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        /* HEADER */
+        .header { background: var(--bg-secondary); border-bottom: 1px solid var(--border); padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .header-left { display: flex; align-items: center; gap: 16px; }
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-icon { width: 32px; height: 32px; background: var(--blue); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; color: white; }
+        .logo-text { font-size: 16px; font-weight: 700; color: var(--text-primary); }
+        .logo-text span { color: var(--blue); }
+        .header-meta { color: var(--text-secondary); font-size: 12px; font-family: 'JetBrains Mono', monospace; }
+        .header-right { display: flex; align-items: center; gap: 8px; }
+
+        /* BUTTONS */
+        .btn { background: var(--bg-tertiary); color: var(--text-primary); border: 1px solid var(--border); padding: 8px 16px; cursor: pointer; font-weight: 600; font-size: 12px; font-family: 'Inter', sans-serif; transition: all 0.15s; text-transform: uppercase; letter-spacing: 0.5px; }
+        .btn:hover { background: var(--bg-hover); border-color: var(--text-tertiary); }
+        .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .btn-primary { background: var(--blue); border-color: var(--blue); color: white; }
+        .btn-primary:hover { background: #1e53e6; }
+        .btn-active { background: var(--green); border-color: var(--green); color: #131722; }
+        .btn-danger { background: transparent; border-color: var(--red); color: var(--red); padding: 4px 10px; font-size: 11px; }
+        .btn-danger:hover { background: var(--red); color: white; }
+
+        /* STATUS BAR */
+        .status-bar { display: flex; gap: 1px; background: var(--border); border-bottom: 1px solid var(--border); font-size: 12px; font-family: 'JetBrains Mono', monospace; }
+        .status-item { padding: 6px 14px; background: var(--bg-secondary); display: flex; align-items: center; gap: 6px; }
+        .status-dot { width: 6px; height: 6px; border-radius: 50%; }
+        .status-dot.green { background: var(--green); }
+        .status-dot.red { background: var(--red); }
+        .status-dot.yellow { background: var(--yellow); }
+        .status-dot.blue { background: var(--blue); }
+
+        /* LOADING */
+        .loading { display: none; padding: 8px 20px; background: var(--blue-bg); color: var(--blue); font-size: 12px; border-bottom: 1px solid var(--border); }
+        .loading.active { display: flex; align-items: center; gap: 8px; }
+        .spinner { width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin 0.8s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* MAIN LAYOUT */
+        .main { padding: 0; }
+        .grid { display: grid; gap: 1px; align-items: start; }
+        .grid > .card { border: 1px solid var(--border); background: var(--bg-secondary); }
+        .grid-top { grid-template-columns: repeat(4, 1fr); }
+        .grid-mid { grid-template-columns: 1fr; }
+        .grid-split { grid-template-columns: 1fr 1fr; }
+        .grid-bottom { grid-template-columns: 1fr 1fr; }
+
+        /* CARDS */
+        .card { background: var(--bg-secondary); padding: 0; }
+        .card-header { padding: 10px 14px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .card-title { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-secondary); }
+        .card-body { padding: 12px 14px; overflow-x: auto; }
+
+        /* TABLES */
+        table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        th { padding: 8px 10px; text-align: left; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px; border-bottom: 1px solid var(--border); background: var(--bg-primary); }
+        td { padding: 7px 10px; border-bottom: 1px solid rgba(42,46,57,0.5); font-family: 'JetBrains Mono', monospace; font-size: 12px; white-space: nowrap; }
+        tr:hover td { background: var(--bg-tertiary); }
+
+        /* COLORS */
+        .bullish { color: var(--green); }
+        .bearish { color: var(--red); }
+        .neutral { color: var(--yellow); }
+        .cyan { color: var(--cyan); }
+
+        /* VERDICT */
+        .verdict { font-size: 28px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; }
+        .verdict.bullish { color: var(--green); text-shadow: 0 0 20px rgba(38,166,154,0.3); }
+        .verdict.bearish { color: var(--red); text-shadow: 0 0 20px rgba(239,83,80,0.3); }
+        .verdict.neutral { color: var(--yellow); text-shadow: 0 0 20px rgba(255,152,0,0.3); }
+
+        /* BADGES */
+        .badge { display: inline-flex; align-items: center; padding: 2px 8px; font-size: 11px; font-weight: 600; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.3px; }
+        .badge-buy { background: var(--green-bg); color: var(--green); border: 1px solid rgba(38,166,154,0.3); }
+        .badge-sell { background: var(--red-bg); color: var(--red); border: 1px solid rgba(239,83,80,0.3); }
+        .badge-neutral { background: var(--yellow-bg); color: var(--yellow); border: 1px solid rgba(255,152,0,0.3); }
+        .badge-conflict { background: var(--red-bg); color: var(--red); border: 1px solid rgba(239,83,80,0.3); }
+        .badge-ok { background: var(--green-bg); color: var(--green); border: 1px solid rgba(38,166,154,0.3); }
+
+        /* DEBATE */
+        .debate-msg { padding: 10px 12px; margin: 2px 0; font-size: 12px; border-left: 3px solid; }
+        .debate-opening { background: rgba(38,166,154,0.06); border-color: var(--green); }
+        .debate-counter { background: rgba(239,83,80,0.06); border-color: var(--red); }
+        .debate-challenge { background: rgba(255,152,0,0.06); border-color: var(--yellow); }
+        .debate-concession { background: rgba(0,188,212,0.06); border-color: var(--cyan); }
+        .debate-moderator { background: rgba(41,98,255,0.06); border-color: var(--blue); }
+        .debate-speaker { font-weight: 600; margin-right: 6px; }
+
+        /* STRENGTH BAR */
+        .strength-bar { display: inline-block; height: 4px; background: var(--green); vertical-align: middle; margin-right: 6px; }
+
+        /* CONFLUENCE TAGS */
+        .conf-tag { display: inline-block; background: var(--bg-tertiary); color: var(--text-secondary); padding: 1px 6px; font-size: 10px; margin: 1px; font-family: 'JetBrains Mono', monospace; }
+
+        /* PRICE FLASH */
+        @keyframes flash { 0% { background: var(--bg-tertiary); } 100% { background: transparent; } }
+        .price-flash { animation: flash 0.6s ease-out; }
+
+        /* GLOBAL STATS ROW */
+        .stat-row { display: flex; gap: 20px; flex-wrap: wrap; padding: 8px 0; }
+        .stat-item { display: flex; flex-direction: column; gap: 2px; }
+        .stat-label { font-size: 10px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; }
+        .stat-value { font-size: 14px; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+
+        /* MULTI-TF ROW */
+        .tf-row { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid rgba(42,46,57,0.5); }
+        .tf-row:last-child { border-bottom: none; }
+        .tf-pair { font-weight: 600; color: var(--cyan); min-width: 80px; font-family: 'JetBrains Mono', monospace; }
+        .tf-values { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-secondary); }
+
+        /* FOOTER */
+        .footer { padding: 10px 20px; text-align: right; color: var(--text-tertiary); font-size: 11px; font-family: 'JetBrains Mono', monospace; border-top: 1px solid var(--border); }
+
+        /* EMPTY STATE */
+        .empty { color: var(--text-tertiary); font-size: 12px; padding: 16px; text-align: center; }
+
+        /* SCROLLBAR */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: var(--bg-tertiary); }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-tertiary); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .grid-top { grid-template-columns: 1fr 1fr; }
+            .grid-split, .grid-bottom { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="logo">
+                <div class="logo-icon">AI</div>
+                <div class="logo-text"><span>AI</span> Office</div>
+            </div>
+            <div class="header-meta">{{ pairs | length }} PAIRS · {{ staff_count }} STAFF · {{ dept_count }} DEPTS · {{ timeframe }}</div>
+        </div>
+        <div class="header-right">
+            <button class="btn btn-primary" id="runBtn" onclick="runCycle()">ANALYZE</button>
+            <button class="btn" id="autoBtn" onclick="toggleAuto()">AUTO: OFF</button>
+        </div>
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        Analyzing markets...
+    </div>
+
+    <div class="status-bar" id="statusBar" style="display:none;">
+        <div class="status-item"><span class="status-dot blue" id="statusDot"></span><span id="statusAuto"></span></div>
+        <div class="status-item" id="statusVerdict">—</div>
+        <div class="status-item" id="statusSignals">—</div>
+        <div class="status-item" id="statusNews">—</div>
+        <div class="status-item" id="statusTime">—</div>
+    </div>
+
+    <div class="main">
+        <div class="grid grid-top">
+            <div class="card" id="pricesCard">
+                <div class="card-header"><span class="card-title">Live Prices</span></div>
+                <div class="card-body" style="padding:0;">
+                    <table id="pricesTable">
+                        <thead><tr><th>Pair</th><th style="text-align:right">Price</th><th style="text-align:right">Open</th><th style="text-align:right">High</th><th style="text-align:right">Low</th><th style="text-align:right">Chg</th></tr></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card" id="globalCard">
+                <div class="card-header"><span class="card-title">Global Verdict</span></div>
+                <div class="card-body" id="globalContent"><div class="empty">Waiting for analysis...</div></div>
+            </div>
+
+            <div class="card" id="multiTfCard">
+                <div class="card-header"><span class="card-title">Multi-TF</span></div>
+                <div class="card-body" id="multiTfContent"><div class="empty">Waiting for analysis...</div></div>
+            </div>
+
+            <div class="card" id="newsCard">
+                <div class="card-header"><span class="card-title">News</span></div>
+                <div class="card-body" id="newsContent"><div class="empty">Waiting for analysis...</div></div>
+            </div>
+        </div>
+
+        <div class="grid grid-mid">
+            <div class="card" id="deptCard">
+                <div class="card-header"><span class="card-title">Department Reports</span></div>
+                <div class="card-body" style="padding:0;">
+                    <table id="deptTable">
+                        <thead><tr><th>Department</th><th>Head</th><th>Verdict</th><th>B/S/N</th><th>Recommendation</th></tr></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-split">
+            <div class="card" id="positionsCard">
+                <div class="card-header"><span class="card-title">Paper Trading</span></div>
+                <div class="card-body" id="positionsContent"><div class="empty">No open positions</div></div>
+            </div>
+            <div class="card" id="debateCard">
+                <div class="card-header"><span class="card-title">Analyst Debate</span></div>
+                <div class="card-body" id="debateContent"><div class="empty">Waiting for analysis...</div></div>
+            </div>
+        </div>
+
+        <div class="grid grid-mid">
+            <div class="card" id="analystsCard">
+                <div class="card-header"><span class="card-title">All Analysts (33)</span></div>
+                <div class="card-body" style="padding:0;max-height:300px;overflow-y:auto;">
+                    <table id="analystsTable">
+                        <thead><tr><th>#</th><th>Name</th><th>Department</th><th>Summary</th><th>Signals</th></tr></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-bottom">
+            <div class="card" id="historyCard">
+                <div class="card-header"><span class="card-title">Trade History</span></div>
+                <div class="card-body" id="historyContent"><div class="empty">No trades yet</div></div>
+            </div>
+            <div class="card" id="notificationsCard">
+                <div class="card-header"><span class="card-title">Notifications</span></div>
+                <div class="card-body" id="notificationsContent"><div class="empty">No notifications</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="tsFooter"></div>
+
+    <script>
+        function escapeHtml(str) {
+            if (str == null) return '';
+            return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+        }
+
+        async function runCycle() {
+            const btn = document.getElementById('runBtn');
+            const loading = document.getElementById('loading');
+            btn.disabled = true;
+            loading.classList.add('active');
+            try {
+                const resp = await fetch('/api/cycle');
+                const data = await resp.json();
+                if (data.error) { alert(data.error); return; }
+                renderPrices(data.prices);
+                renderGlobal(data.global_report, data.weighted);
+                renderDepts(data.dept_reports);
+                renderDebate(data.debate);
+                renderAnalysts(data.analyst_reports);
+                renderMultiTf(data.multi_tf);
+                renderNews(data.news);
+                renderPositions(data.trader_stats, data.open_positions);
+                renderHistory(data.trade_history);
+                renderNotifications(data.notifications);
+                updateStatus(data);
+                document.getElementById('tsFooter').textContent = data.timestamp;
+            } catch (e) {
+                alert('Error: ' + e.message);
+            } finally {
+                btn.disabled = false;
+                loading.classList.remove('active');
+            }
+        }
+
+        function renderPrices(prices) {
+            const tbody = document.querySelector('#pricesTable tbody');
+            tbody.innerHTML = prices.map(p => {
+                const chg = p.price_change || 0;
+                const chgClass = chg >= 0 ? 'bullish' : 'bearish';
+                const chgSign = chg >= 0 ? '+' : '';
+                const decimals = p.pip_size < 0.001 ? 5 : 3;
+                return `<tr class="price-flash"><td style="color:var(--cyan);font-weight:600">${escapeHtml(p.name)}</td><td style="text-align:right" class="${chgClass} mono">${escapeHtml(p.price.toFixed(decimals))}</td><td style="text-align:right" class="${chgClass} mono" title="Open">${escapeHtml(p.open.toFixed(decimals))}</td><td style="text-align:right;color:var(--text-secondary)" class="mono">${escapeHtml(p.high.toFixed(decimals))}</td><td style="text-align:right;color:var(--text-secondary)" class="mono">${escapeHtml(p.low.toFixed(decimals))}</td><td style="text-align:right" class="${chgClass} mono" title="Change in pips">${chgSign}${escapeHtml(chg)}p</td></tr>`;
+            }).join('');
+        }
+
+        function renderGlobal(gr, w) {
+            const color = gr.global_verdict === 'BULLISH' ? 'bullish' : gr.global_verdict === 'BEARISH' ? 'bearish' : 'neutral';
+            document.getElementById('globalContent').innerHTML = `
+                <div class="verdict ${color}">${escapeHtml(gr.global_verdict)}</div>
+                <div class="stat-row">
+                    <div class="stat-item"><span class="stat-label">Buy</span><span class="stat-value bullish">${escapeHtml(gr.total_buy_signals)}</span></div>
+                    <div class="stat-item"><span class="stat-label">Sell</span><span class="stat-value bearish">${escapeHtml(gr.total_sell_signals)}</span></div>
+                    <div class="stat-item"><span class="stat-label">Neutral</span><span class="stat-value neutral">${escapeHtml(gr.total_neutral_signals)}</span></div>
+                    <div class="stat-item"><span class="stat-label">Weighted B/S</span><span class="stat-value" style="color:var(--text-primary)">${escapeHtml(w.weighted_buy)} / ${escapeHtml(w.weighted_sell)}</span></div>
+                </div>
+                <div style="margin-top:8px;font-size:12px;color:var(--text-secondary);line-height:1.6">${escapeHtml(gr.action_recommendation)}</div>
+            `;
+        }
+
+        function renderDepts(depts) {
+            const tbody = document.querySelector('#deptTable tbody');
+            tbody.innerHTML = depts.map(r => {
+                const c = r.verdict === 'BULLISH' ? 'bullish' : r.verdict === 'BEARISH' ? 'bearish' : 'neutral';
+                const badge = r.verdict === 'BULLISH' ? 'badge-buy' : r.verdict === 'BEARISH' ? 'badge-sell' : 'badge-neutral';
+                return `<tr><td style="font-weight:600">${escapeHtml(r.department)}</td><td style="color:var(--text-secondary)">${escapeHtml(r.head_name)}</td><td><span class="badge ${badge}">${escapeHtml(r.verdict)}</span></td><td class="mono" style="text-align:center">${escapeHtml(r.buy_signals)}/${escapeHtml(r.sell_signals)}/${escapeHtml(r.neutral_signals)}</td><td style="color:var(--text-secondary);font-size:11px">${escapeHtml(r.recommendation)}</td></tr>`;
+            }).join('');
+        }
+
+        function renderDebate(msgs) {
+            document.getElementById('debateContent').innerHTML = msgs.map(m => {
+                const cls = 'debate-' + m.type;
+                const speaker = m.department
+                    ? `<span class="debate-speaker">${escapeHtml(m.speaker)}</span><span style="color:var(--text-tertiary)"> · ${escapeHtml(m.department)}</span>`
+                    : `<span class="debate-speaker" style="color:var(--blue)">${escapeHtml(m.speaker)}</span>`;
+                return `<div class="debate-msg ${cls}">${speaker} <span style="color:var(--text-secondary)">—</span> ${escapeHtml(m.text)}</div>`;
+            }).join('');
+        }
+
+        function renderAnalysts(reports) {
+            const tbody = document.querySelector('#analystsTable tbody');
+            tbody.innerHTML = reports.map(r => {
+                const head = r.is_head ? ' <span style="color:var(--yellow)">★</span>' : '';
+                const sc = r.summary || '';
+                const cls = sc.includes('BULLISH') ? 'bullish' : sc.includes('BEARISH') ? 'bearish' : 'neutral';
+                return `<tr><td style="color:var(--text-tertiary)">${escapeHtml(r.id)}</td><td style="color:var(--cyan);font-weight:500">${escapeHtml(r.name)}${head}</td><td style="color:var(--text-secondary);font-size:11px">${escapeHtml(r.department)}</td><td class="${cls}" style="font-size:11px">${escapeHtml(sc.substring(0,35))}</td><td style="text-align:center">${escapeHtml(r.signal_count)}</td></tr>`;
+            }).join('');
+        }
+
+        function renderMultiTf(results) {
+            if (!results || results.length === 0) { document.getElementById('multiTfContent').innerHTML = '<div class="empty">No data</div>'; return; }
+            document.getElementById('multiTfContent').innerHTML = results.map(r => {
+                const badge = r.conflict ? '<span class="badge badge-conflict">CONFLICT</span>' : '<span class="badge badge-ok">OK</span>';
+                return `<div class="tf-row"><span class="tf-pair">${escapeHtml(r.pair)}</span>${badge}<span class="tf-values">D1=${escapeHtml(r.d1_bias)} · H4=${escapeHtml(r.h4_bias)} · M15=${escapeHtml(r.m15_signal)}</span></div>`;
+            }).join('');
+        }
+
+        function renderNews(news) {
+            if (!news || news.length === 0) { document.getElementById('newsContent').innerHTML = '<div class="empty">No news data</div>'; return; }
+            document.getElementById('newsContent').innerHTML = news.filter(n => n.news_count > 0).map(n => {
+                const sig = n.signal === 'BUY' ? 'badge-buy' : n.signal === 'SELL' ? 'badge-sell' : 'badge-neutral';
+                const sentPct = Math.round((n.avg_sentiment + 1) / 2 * 100);
+                const sentColor = n.avg_sentiment > 0.2 ? 'var(--green)' : n.avg_sentiment < -0.2 ? 'var(--red)' : 'var(--yellow)';
+                const sentLabel = n.sentiment_summary === 'POSITIVE' ? 'Bullish' : n.sentiment_summary === 'NEGATIVE' ? 'Bearish' : 'Neutral';
+                const items = (n.top_news || []).map(t => {
+                    const impCls = t.impact === 'high' ? 'badge-sell' : t.impact === 'medium' ? 'badge-neutral' : 'badge-ok';
+                    const sentCls = t.sentiment === 'positive' ? 'bullish' : t.sentiment === 'negative' ? 'bearish' : 'neutral';
+                    return `<div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid var(--border)">
+                        <span class="badge ${impCls}" style="min-width:36px;text-align:center;font-size:9px">${escapeHtml(t.impact.toUpperCase())}</span>
+                        <div style="flex:1;min-width:0">
+                            <div style="color:var(--text-primary);font-size:12px;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${escapeHtml(t.title)}</div>
+                            <div style="display:flex;gap:8px;margin-top:2px;font-size:10px;color:var(--text-tertiary)">
+                                <span>${escapeHtml(t.source)}</span>
+                                <span class="${sentCls}">${escapeHtml(t.sentiment)}</span>
+                            </div>
+                        </div>
+                    </div>`;
+                }).join('');
+                return `<div style="border:1px solid var(--border);margin-bottom:8px;background:var(--bg-primary)">
+                    <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-bottom:1px solid var(--border)">
+                        <div style="display:flex;align-items:center;gap:8px">
+                            <span style="font-weight:600;color:var(--cyan);font-family:'JetBrains Mono',monospace;font-size:13px">${escapeHtml(n.pair)}</span>
+                            <span class="badge ${sig}">${escapeHtml(n.signal)}</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:10px;font-size:11px;color:var(--text-secondary)">
+                            <span>${escapeHtml(n.news_count)} news</span>
+                            ${n.high_impact > 0 ? `<span class="bearish">${escapeHtml(n.high_impact)} high</span>` : ''}
+                        </div>
+                    </div>
+                    <div style="padding:8px 10px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border)">
+                        <span style="font-size:10px;color:var(--text-tertiary);min-width:55px;text-transform:uppercase">${escapeHtml(sentLabel)}</span>
+                        <div style="flex:1;height:4px;background:var(--bg-tertiary);position:relative">
+                            <div style="position:absolute;left:0;top:0;height:100%;width:${sentPct}%;background:${sentColor};transition:width 0.3s"></div>
+                        </div>
+                        <span style="font-size:11px;font-family:'JetBrains Mono',monospace;color:${sentColor};min-width:35px;text-align:right">${escapeHtml(n.avg_sentiment > 0 ? '+' : '')}${escapeHtml(n.avg_sentiment.toFixed(2))}</span>
+                    </div>
+                    <div style="padding:2px 10px">${items}</div>
+                </div>`;
+            }).join('') || '<div class="empty">No relevant news for active pairs</div>';
+        }
+
+        function renderPositions(stats, positions) {
+            let html = `<div class="stat-row" style="border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:8px">
+                <div class="stat-item"><span class="stat-label">Balance</span><span class="stat-value mono">$${escapeHtml(stats.balance)}</span></div>
+                <div class="stat-item"><span class="stat-label">Equity</span><span class="stat-value mono">$${escapeHtml(stats.equity)}</span></div>
+                <div class="stat-item"><span class="stat-label">PnL</span><span class="stat-value mono ${stats.total_pnl >= 0 ? 'bullish' : 'bearish'}">$${escapeHtml(stats.total_pnl.toFixed(2))}</span></div>
+                <div class="stat-item"><span class="stat-label">ROI</span><span class="stat-value mono ${stats.roi >= 0 ? 'bullish' : 'bearish'}">${escapeHtml(stats.roi)}%</span></div>
+                <div class="stat-item"><span class="stat-label">Win Rate</span><span class="stat-value mono">${escapeHtml(stats.win_rate)}%</span></div>
+                <div class="stat-item"><span class="stat-label">PF</span><span class="stat-value mono">${escapeHtml(stats.profit_factor)}</span></div>
+                <div class="stat-item"><span class="stat-label">DD</span><span class="stat-value mono">${escapeHtml(stats.drawdown_pct)}%</span></div>
+                <div class="stat-item"><span class="stat-label">Trades</span><span class="stat-value mono">${escapeHtml(stats.total_trades)}<span style="color:var(--text-tertiary);font-size:11px"> W:${escapeHtml(stats.wins)} L:${escapeHtml(stats.losses)}</span></span></div>
+            </div>`;
+            if (positions && positions.length > 0) {
+                html += '<table style="width:100%"><thead><tr><th>Pair</th><th>Side</th><th>Entry</th><th>SL</th><th>TP</th><th>Trail</th><th>Str</th><th>Confluence</th><th>PnL</th><th></th></tr></thead><tbody>';
+                positions.forEach(p => {
+                    const cls = p.side === 'BUY' ? 'bullish' : 'bearish';
+                    const conf = (p.confluence || []).slice(0, 2).map(c => `<span class="conf-tag">${escapeHtml(c)}</span>`).join(' ');
+                    const dec = p.pair && p.pair.includes('JPY') ? 3 : 5;
+                    html += `<tr>
+                        <td style="font-weight:600;color:var(--cyan)">${escapeHtml(p.pair)}</td>
+                        <td><span class="badge ${p.side === 'BUY' ? 'badge-buy' : 'badge-sell'}">${escapeHtml(p.side)}</span></td>
+                        <td>${escapeHtml(p.entry.toFixed(dec))}</td>
+                        <td class="bearish">${escapeHtml(p.sl.toFixed(dec))}</td>
+                        <td class="bullish">${escapeHtml(p.tp.toFixed(dec))}</td>
+                        <td style="color:var(--yellow)">${escapeHtml(p.trailing.toFixed(dec))}</td>
+                        <td><div class="strength-bar" style="width:${Math.min(p.strength * 8, 60)}px"></div>${escapeHtml(p.strength)}</td>
+                        <td style="font-size:10px">${conf}</td>
+                        <td class="${p.pnl >= 0 ? 'bullish' : 'bearish'}" style="font-weight:600">${escapeHtml(p.pnl.toFixed(2))}</td>
+                        <td><button class="btn btn-danger" onclick="closePosition('${escapeHtml(p.pair)}')">CLOSE</button></td>
+                    </tr>`;
+                });
+                html += '</tbody></table>';
+            } else {
+                html += '<div class="empty">No open positions — waiting for signal strength ≥ 3</div>';
+            }
+            document.getElementById('positionsContent').innerHTML = html;
+        }
+
+        function renderHistory(trades) {
+            if (!trades || trades.length === 0) { document.getElementById('historyContent').innerHTML = '<div class="empty">No trades yet</div>'; return; }
+            let html = '<table><thead><tr><th>Pair</th><th>Side</th><th>Entry</th><th>Exit</th><th>Reason</th><th>Str</th><th>PnL</th><th>Result</th></tr></thead><tbody>';
+            trades.slice(-15).reverse().forEach(t => {
+                const cls = t.result === 'WIN' ? 'bullish' : 'bearish';
+                const dec = t.pair && t.pair.includes('JPY') ? 3 : 5;
+                html += `<tr>
+                    <td style="color:var(--cyan);font-weight:500">${escapeHtml(t.pair)}</td>
+                    <td><span class="badge ${t.side === 'BUY' ? 'badge-buy' : 'badge-sell'}">${escapeHtml(t.side)}</span></td>
+                    <td>${escapeHtml(t.entry.toFixed(dec))}</td>
+                    <td>${escapeHtml(t.exit.toFixed(dec))}</td>
+                    <td style="color:var(--text-secondary)">${escapeHtml(t.exit_reason)}</td>
+                    <td>${escapeHtml(t.strength)}</td>
+                    <td class="${cls}" style="font-weight:600">${escapeHtml(t.pnl.toFixed(2))}</td>
+                    <td><span class="badge ${t.result === 'WIN' ? 'badge-buy' : 'badge-sell'}">${escapeHtml(t.result)}</span></td>
+                </tr>`;
+            });
+            html += '</tbody></table>';
+            document.getElementById('historyContent').innerHTML = html;
+        }
+
+        function renderNotifications(notifications) {
+            if (!notifications || notifications.length === 0) { document.getElementById('notificationsContent').innerHTML = '<div class="empty">No notifications</div>'; return; }
+            document.getElementById('notificationsContent').innerHTML = notifications.slice(0, 10).map(n => {
+                const dot = n.severity === 'critical' ? 'red' : n.severity === 'warning' ? 'yellow' : 'green';
+                return `<div style="display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12px"><span class="status-dot ${dot}"></span><span style="color:var(--cyan);font-weight:500;font-family:'JetBrains Mono',monospace;font-size:11px">${escapeHtml(n.pair)}</span><span style="color:var(--text-secondary)">${escapeHtml(n.message)}</span></div>`;
+            }).join('');
+        }
+
+        async function closePosition(pair) {
+            if (!confirm('Close ' + pair + '?')) return;
+            try {
+                const resp = await fetch('/api/close_position', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({pair: pair})
+                });
+                const data = await resp.json();
+                if (data.error) { alert(data.error); return; }
+                runCycle();
+            } catch (e) { alert('Error: ' + e.message); }
+        }
+
+        function updateStatus(data) {
+            const bar = document.getElementById('statusBar');
+            bar.style.display = 'flex';
+            const gr = data.global_report;
+            const v = gr.global_verdict;
+            const dot = document.getElementById('statusDot');
+            dot.className = 'status-dot ' + (v === 'BULLISH' ? 'green' : v === 'BEARISH' ? 'red' : 'yellow');
+            document.getElementById('statusVerdict').innerHTML = `<span style="color:${v === 'BULLISH' ? 'var(--green)' : v === 'BEARISH' ? 'var(--red)' : 'var(--yellow)'};font-weight:600">${v}</span>`;
+            document.getElementById('statusSignals').innerHTML = `<span class="bullish">${gr.total_buy_signals}B</span> / <span class="bearish">${gr.total_sell_signals}S</span>`;
+            const newsCount = data.news ? data.news.reduce((a, n) => a + n.news_count, 0) : 0;
+            document.getElementById('statusNews').textContent = newsCount + ' news';
+            document.getElementById('statusTime').textContent = data.timestamp;
+        }
+
+        let autoInterval = null;
+        let priceInterval = null;
+        let countdown = 5;
+
+        async function fetchPrices() {
+            try {
+                const resp = await fetch('/api/prices');
+                const data = await resp.json();
+                if (data.prices && data.prices.length > 0) {
+                    renderPrices(data.prices);
+                    renderPositions(data.trader_stats, data.open_positions);
+                }
+            } catch (e) {}
+        }
+
+        function toggleAuto() {
+            const btn = document.getElementById('autoBtn');
+            if (autoInterval) {
+                clearInterval(autoInterval);
+                clearInterval(priceInterval);
+                autoInterval = null;
+                priceInterval = null;
+                btn.textContent = 'AUTO: OFF';
+                btn.className = 'btn';
+                document.getElementById('statusAuto').textContent = '';
+            } else {
+                countdown = 5;
+                runCycle();
+                priceInterval = setInterval(fetchPrices, 2000);
+                autoInterval = setInterval(() => {
+                    countdown--;
+                    document.getElementById('statusAuto').textContent = countdown + 's';
+                    if (countdown <= 0) { countdown = 5; runCycle(); }
+                }, 1000);
+                btn.textContent = 'AUTO: ON';
+                btn.className = 'btn btn-active';
+            }
+        }
+
+        window.addEventListener('load', () => { toggleAuto(); });
+    </script>
+</body>
+</html>
