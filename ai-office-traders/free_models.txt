@@ -1,0 +1,108 @@
+Что нужно улучшить (приоритетно):
+
+Главный минус — LLM почти не используется в самих дебатах.
+Ты определяешь _llm_judge, но opening, counter и rebuttal всё ещё на слабых шаблонах.
+
+Отсутствуют функции _llm_opening, _llm_counter, _llm_rebuttal.
+Шаблоны _template_* стали слишком общими и повторяющимися.
+Можно улучшить выбор пары и логику эксперта.
+Мои рекомендации по доработке
+Вот обновлённая версия ключевых частей, которые стоит заменить/добавить:
+1. Добавь эти LLM-функции (после _format_findings)
+def _llm_opening(analyst: dict, pair: str, side: str) -> str:
+    from llm_client import get_llm
+    try:
+        llm = get_llm()
+        findings = _format_findings(analyst)
+        side_ru = "LONG (покупка)" if side == "BUY" else "SHORT (продажа)"
+        
+        prompt = f"""Ты — {analyst['analyst_name']}, {analyst.get('role', '')}, отдел "{analyst['department']}".
+Пара: {pair}. Твоя позиция: {side_ru}.
+
+Твои данные:
+{findings}
+
+Напиши сильное открывающее заявление (4-6 предложений):
+- Назови ключевые уровни, индикаторы или данные
+- Объясни логику
+- Будь уверенным и профессиональным"""
+
+        messages = [
+            {"role": "system", "content": "Ты опытный Forex-трейдер. Говори конкретно, с уровнями и фактами."},
+            {"role": "user", "content": prompt}
+        ]
+        return llm.chat(messages, temperature=0.75, max_tokens=450)
+    except:
+        return _template_opening(analyst, pair, side)
+
+
+def _llm_counter(analyst: dict, opponent_text: str, pair: str, side: str) -> str:
+    from llm_client import get_llm
+    try:
+        llm = get_llm()
+        findings = _format_findings(analyst)
+        side_ru = "LONG" if side == "BUY" else "SHORT"
+        
+        prompt = f"""Ты — {analyst['analyst_name']}, отдел "{analyst['department']}".
+Оппонент сказал по {pair}:
+"{opponent_text[:400]}"
+
+Твои данные:
+{findings}
+
+Напиши контраргумент (3-5 предложений). Опровергни оппонента и приведи свои доказательства."""
+
+        messages = [
+            {"role": "system", "content": f"Ты агрессивно, но профессионально защищаешь свою позицию {side_ru}."},
+            {"role": "user", "content": prompt}
+        ]
+        return llm.chat(messages, temperature=0.7, max_tokens=400)
+    except:
+        return _template_counter(analyst, opponent_text, pair, side)
+
+
+def _llm_rebuttal(analyst: dict, opponent_counter: str, pair: str, side: str) -> str:
+    from llm_client import get_llm
+    try:
+        llm = get_llm()
+        findings = _format_findings(analyst)
+        prompt = f"""Ты — {analyst['analyst_name']}, отдел "{analyst['department']}".
+Оппонент возразил:
+"{opponent_counter[:400]}"
+
+Твои данные:
+{findings}
+
+Напиши финальный ответ (rebuttal). Укрепи свою позицию и закрой вопрос."""
+
+        messages = [
+            {"role": "system", "content": "Ты подводишь итог своей позиции уверенно и убедительно."},
+            {"role": "user", "content": prompt}
+        ]
+        return llm.chat(messages, temperature=0.65, max_tokens=350)
+    except:
+        return _template_rebuttal(analyst, opponent_counter, pair, side)
+2. В run_debate() замени шаблоны на LLM-версии:
+    # === Раунд 1: Открытие ===
+    if bull:
+        bull_arg = _llm_opening(bull, pair, "BUY") if LLM_ENABLED else _template_opening(bull, pair, "BUY")
+        ...
+    if bear:
+        bear_arg = _llm_opening(bear, pair, "SELL") if LLM_ENABLED else _template_opening(bear, pair, "SELL")
+        ...
+
+    # === Раунд 2: Контраргументы ===
+    if bull and bear_arg:
+        bull_counter = _llm_counter(bull, bear_arg, pair, "BUY") if LLM_ENABLED else _template_counter(bull, bear_arg, pair, "BUY")
+        ...
+    if bear and bull_arg:
+        bear_counter = _llm_counter(bear, bull_arg, pair, "SELL") if LLM_ENABLED else _template_counter(bear, bull_arg, pair, "SELL")
+        ...
+
+    # === Раунд 3: Rebuttal ===
+    if bull and bear_counter:
+        bull_rebuttal = _llm_rebuttal(bull, bear_counter, pair, "BUY") if LLM_ENABLED else _template_rebuttal(bull, bear_counter, pair, "BUY")
+        ...
+    if bear and bull_counter:
+        bear_rebuttal = _llm_rebuttal(bear, bull_counter, pair, "SELL") if LLM_ENABLED else _template_rebuttal(bear, bull_counter, pair, "SELL")
+        ...

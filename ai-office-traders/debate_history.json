@@ -1,0 +1,3952 @@
+[
+  {
+    "cycle": 121,
+    "pair": "NZD/USD",
+    "timestamp": "2026-06-16 07:12:54",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#121 ДЕБАТЫ: NZD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На NZD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по NZD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по NZD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#121 ИТОГ: По NZD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 122,
+    "pair": "AUD/USD",
+    "timestamp": "2026-06-16 07:13:00",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#122 ДЕБАТЫ: AUD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На AUD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по AUD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по AUD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#122 ИТОГ: По AUD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 123,
+    "pair": "USD/CAD",
+    "timestamp": "2026-06-16 07:13:06",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#123 ДЕБАТЫ: USD/CAD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/CAD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/CAD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/CAD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#123 ИТОГ: По USD/CAD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 125,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:13:15",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#125 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента:** 3/10\n**Оценка медвежьего аргумента:** 2/10\n**Вердикт:** NEUTRAL\n**Обоснование:**\nЕдинственный бычий сигнал поступает от отдела \"Исследования и стратегия\", тогда как все остальные отделы (включая ключевой \"ICT / Smart Money\") нейтральны. Контраргументы оппонента не подкр"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#125 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 125,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:13:17",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#125 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента: 3/10**\nАргумент основан на единственном мнении отдела \"Исследования и стратегия\" (BULLISH), но игнорирует нейтральные данные всех остальных отделов, включая ключевые (ICT/Smart Money, Макроэкономика, Технический анализ). Нет убедительных фактов или трендов, подтверждающих"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#125 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 126,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:13:25",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#126 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента: 4/10**\nАргумент основан на данных отдела «ICT / Smart Money», но сам этот отдел оценивает рынок как нейтральный. Нет убедительных доказательств в поддержку бычьей позиции.\n\n**Оценка медвежьего аргумента: 3/10**\nКонтраргументы не представлены в явном виде, только отрицание"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#126 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 127,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:13:31",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#127 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента:** 4/10\n**Оценка медвежьего аргумента:** 5/10\n**Вердикт:** NEUTRAL\n**Обоснование:**\nАргументы обеих сторон не подкреплены убедительными фактическими данными. Голосование отделов преимущественно нейтрально, а единственный бычий сигнал от \"Исследований и стратегии\" не имеет "
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#127 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 129,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:13:37",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#128 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "### **Оценка аргументов:**\n\n**Оценка бычьего аргумента (BUY по GBP/USD):** **3/10**\n- Единственным \"бычьим\" голосом является \"Исследования и стратегия\", но его вес незначителен на фоне нейтралитета всех остальных отделов.\n- Аргумент основан на данных отдела \"ICT / Smart Money\", который в итоге также"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#129 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 129,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:13:43",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#129 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента: 4/10**\nАргумент основан на данных одного отдела («ICT / Smart Money»), который в итоге оказался NEUTRAL. Нет веских фактических подтверждений для BUY, кроме субъективной рекомендации.\n\n**Оценка медвежьего аргумента: 5/10**\nКонтраргумент слабее, так как не опровергает нейт"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#129 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 130,
+    "pair": "USD/CHF",
+    "timestamp": "2026-06-16 07:13:49",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#130 ДЕБАТЫ: USD/CHF"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/CHF вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/CHF."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/CHF. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#130 ИТОГ: По USD/CHF: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 131,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:13:49",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#131 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#131 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 132,
+    "pair": "USD/CHF",
+    "timestamp": "2026-06-16 07:13:50",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#132 ДЕБАТЫ: USD/CHF"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/CHF вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/CHF."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/CHF. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#132 ИТОГ: По USD/CHF: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 133,
+    "pair": "USD/JPY",
+    "timestamp": "2026-06-16 07:14:27",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#133 ДЕБАТЫ: USD/JPY"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/JPY вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/JPY."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/JPY. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#133 ИТОГ: По USD/JPY: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 134,
+    "pair": "NZD/USD",
+    "timestamp": "2026-06-16 07:14:37",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#134 ДЕБАТЫ: NZD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На NZD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по NZD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по NZD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#134 ИТОГ: По NZD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 135,
+    "pair": "USD/CAD",
+    "timestamp": "2026-06-16 07:14:42",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#135 ДЕБАТЫ: USD/CAD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/CAD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/CAD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/CAD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#135 ИТОГ: По USD/CAD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 136,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:14:51",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#136 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента:** 4/10\n**Оценка медвежьего аргумента:** 2/10\n**Вердикт:** NEUTRAL\n**Обоснование:**\nЕдинственный бычий сигнал поступает от отдела \"Исследования и стратегия\", но он не подкреплён фактическими данными или аргументами. Все остальные отделы нейтральны, что не даёт достаточных "
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#136 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 138,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:15:17",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#137 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "### **Оценка аргументов:**\n\n**Оценка бычьего аргумента (BUY): 5/10**\n- Единственный поддерживающий фактор — **Исследования и стратегия (BULLISH)**, но остальные отделы нейтральны.\n- Нет убедительных данных или трендов, подтверждающих бычий сценарий.\n\n**Оценка медвежьего аргумента (SELL/NEUTRAL): 8/1"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#138 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 138,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:15:22",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#138 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента: 3/10**\nАргумент основан на единственном мнении отдела \"Исследования и стратегия\" (BULLISH), но игнорирует нейтральные данные всех остальных отделов, включая ключевой \"ICT / Smart Money\" (NEUTRAL). Нет убедительных фактов или анализа, подтверждающих бычий тренд.\n\n**Оценка "
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#138 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 140,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:15:27",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#139 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента:** 3/10\n**Оценка медвежьего аргумента:** 2/10\n**Вердикт:** NEUTRAL\n**Обоснование:**\nАргументы Матвея Жукова не подкреплены убедительными фактическими данными. Все ключевые отделы, кроме \"Исследования и стратегия\", нейтральны, что сводит на нет его утверждения. Нет объектив"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#140 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 140,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:15:31",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#140 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента: 4/10**\nАргумент основан на данных отдела «ICT / Smart Money», но в итоговом голосовании этот отдел указал NEUTRAL, что снижает вес аргумента. Также отсутствуют дополнительные подтверждающие факторы из других отделов.\n\n**Оценка медвежьего аргумента: 5/10**\nКонтраргумент не"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#140 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 141,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:15:37",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#141 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента:** 4/10\n**Оценка медвежьего аргумента:** 5/10\n\n**Вердикт:** NEUTRAL\n\n**Обоснование:**\nАргументы обеих сторон слабы, так как основаны на единственном источнике («ICT / Smart Money»), который сам по себе нейтрален. Остальные отделы не поддерживают ни одну из позиций, что дел"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#141 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 142,
+    "pair": "AUD/USD",
+    "timestamp": "2026-06-16 07:15:44",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#142 ДЕБАТЫ: AUD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На AUD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по AUD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по AUD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#142 ИТОГ: По AUD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 143,
+    "pair": "NZD/USD",
+    "timestamp": "2026-06-16 07:15:45",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#143 ДЕБАТЫ: NZD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На NZD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по NZD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по NZD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#143 ИТОГ: По NZD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 144,
+    "pair": "USD/CAD",
+    "timestamp": "2026-06-16 07:15:50",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#144 ДЕБАТЫ: USD/CAD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/CAD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/CAD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/CAD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#144 ИТОГ: По USD/CAD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 145,
+    "pair": "USD/CAD",
+    "timestamp": "2026-06-16 07:15:53",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#145 ДЕБАТЫ: USD/CAD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/CAD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/CAD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/CAD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#145 ИТОГ: По USD/CAD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 146,
+    "pair": "NZD/USD",
+    "timestamp": "2026-06-16 07:15:55",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#146 ДЕБАТЫ: NZD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На NZD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по NZD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по NZD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#146 ИТОГ: По NZD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 147,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:16:01",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#147 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#147 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 148,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:16:06",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#148 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#148 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 149,
+    "pair": "USD/CAD",
+    "timestamp": "2026-06-16 07:16:12",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#149 ДЕБАТЫ: USD/CAD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/CAD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/CAD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/CAD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#149 ИТОГ: По USD/CAD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 150,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:16:12",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#150 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#150 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 151,
+    "pair": "AUD/USD",
+    "timestamp": "2026-06-16 07:16:18",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#151 ДЕБАТЫ: AUD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На AUD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по AUD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по AUD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#151 ИТОГ: По AUD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 152,
+    "pair": "NZD/USD",
+    "timestamp": "2026-06-16 07:16:24",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#152 ДЕБАТЫ: NZD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На NZD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по NZD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по NZD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#152 ИТОГ: По NZD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 153,
+    "pair": "AUD/USD",
+    "timestamp": "2026-06-16 07:16:29",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#153 ДЕБАТЫ: AUD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На AUD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по AUD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по AUD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#153 ИТОГ: По AUD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 154,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:16:35",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#154 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#154 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 155,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:16:45",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#155 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента: 3/10**\nАргумент основан исключительно на данных одного отдела (\"ICT / Smart Money\"), который в итоге оказался нейтральным. Нет объективных подтверждений от других ключевых отделов (макроэкономика, фундаментальный анализ и т.д.), что снижает вес аргумента.\n\n**Оценка медвеж"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#155 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 156,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:16:51",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#156 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента: 3/10**\nАргумент основан на единственном источнике (\"ICT / Smart Money\"), который в итоге оказался нейтральным. Нет убедительных фактов или дополнительных подтверждений из других отделов.\n\n**Оценка медвежьего аргумента: 2/10**\nКонтраргумент не подкреплён конкретными данным"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#156 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 158,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:16:57",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#157 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента:** 4/10\n**Оценка медвежьего аргумента:** 3/10\n**Вердикт:** NEUTRAL\n\n**Обоснование:**\nАргументы обеих сторон не подкреплены убедительными фактическими данными. Единственный бычий сигнал (отдел \"Исследования и стратегия\") не подтверждается большинством других отделов, которы"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#158 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 158,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:17:01",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#158 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента (BUY по EUR/USD):** 4/10\n**Оценка медвежьего аргумента (SELL по EUR/USD):** 7/10\n\n**Вердикт:** NEUTRAL\n\n**Обоснование:**\nБычий аргумент Матвея Жукова основан исключительно на данных отдела «ICT / Smart Money», которые, однако, были пересмотрены и теперь нейтральны. Это дел"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#158 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 159,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:17:07",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#159 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента: 3/10**\nАргумент основан на единственном источнике (отдел «ICT / Smart Money»), который в текущих данных также нейтрален. Нет подтверждения от других отделов или факторов, что снижает вес аргумента.\n\n**Оценка медвежьего аргумента: 4/10**\nКонтраргумент не подкреплён конкрет"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#159 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 160,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:17:13",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#160 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "**Оценка бычьего аргумента:** 4/10\n**Оценка медвежьего аргумента:** 3/10\n**Вердикт:** NEUTRAL\n**Обоснование:**\nЕдинственным \"бычьим\" голосом является \"Исследования и стратегия\", но остальные 22 отдела нейтральны. Аргументы Матвея Жукова не подкреплены объективными данными — даже \"ICT / Smart Money\" "
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#160 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 161,
+    "pair": "USD/JPY",
+    "timestamp": "2026-06-16 07:17:17",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#161 ДЕБАТЫ: USD/JPY"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/JPY вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/JPY."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/JPY. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#161 ИТОГ: По USD/JPY: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 162,
+    "pair": "AUD/USD",
+    "timestamp": "2026-06-16 07:17:18",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#162 ДЕБАТЫ: AUD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На AUD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по AUD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по AUD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#162 ИТОГ: По AUD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 163,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:17:18",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#163 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#163 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 164,
+    "pair": "EUR/USD",
+    "timestamp": "2026-06-16 07:17:26",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#164 ДЕБАТЫ: EUR/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На EUR/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по EUR/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по EUR/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#164 ИТОГ: По EUR/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 165,
+    "pair": "GBP/USD",
+    "timestamp": "2026-06-16 07:17:31",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#165 ДЕБАТЫ: GBP/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На GBP/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по GBP/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по GBP/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#165 ИТОГ: По GBP/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 166,
+    "pair": "NZD/USD",
+    "timestamp": "2026-06-16 07:17:37",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#166 ДЕБАТЫ: NZD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На NZD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по NZD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по NZD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#166 ИТОГ: По NZD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 167,
+    "pair": "NZD/USD",
+    "timestamp": "2026-06-16 07:17:37",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#167 ДЕБАТЫ: NZD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На NZD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по NZD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по NZD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#167 ИТОГ: По NZD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 168,
+    "pair": "NZD/USD",
+    "timestamp": "2026-06-16 07:17:43",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#168 ДЕБАТЫ: NZD/USD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На NZD/USD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по NZD/USD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по NZD/USD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#168 ИТОГ: По NZD/USD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 169,
+    "pair": "USD/CAD",
+    "timestamp": "2026-06-16 07:17:48",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#169 ДЕБАТЫ: USD/CAD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/CAD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/CAD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/CAD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#169 ИТОГ: По USD/CAD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  },
+  {
+    "cycle": 170,
+    "pair": "USD/CAD",
+    "timestamp": "2026-06-16 07:17:53",
+    "messages": [
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#170 ДЕБАТЫ: USD/CAD"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Бычий лагерь: Матвей Жуков (ICT / Smart Money)"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "Судья: Никита Лебедев (Управление рисками)"
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "opening",
+        "side": "BUY",
+        "round": 1,
+        "text": "На USD/CAD вижу бычий потенциал. По данным отдела «ICT / Smart Money»: htf_bias=BULLISH. Рекомендую LONG."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "counter",
+        "side": "BUY",
+        "round": 2,
+        "text": "Возражаю — данные отдела «ICT / Smart Money» указывают на другое направление. Аргументы оппонента не учитывают ключевые факторы. Рекомендую пересмотреть позицию по USD/CAD."
+      },
+      {
+        "speaker": "Матвей Жуков",
+        "department": "ICT / Smart Money",
+        "type": "rebuttal",
+        "side": "BUY",
+        "round": 3,
+        "text": "Настаиваю на своей позиции. Отдел «ICT / Smart Money» подтверждает BUY по USD/CAD. Контраргументы не опровергают ключевые данные."
+      },
+      {
+        "speaker": "Никита Лебедев",
+        "department": "Управление рисками",
+        "type": "judge",
+        "side": "",
+        "round": 0,
+        "text": "Учитывая аргументы сторон и голоса отделов, рекомендую NEUTRAL."
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "vote",
+        "side": "",
+        "round": 0,
+        "text": "ГОЛОСОВАНИЕ: 1 BUY vs 0 SELL vs 17 NEUTRAL (18 голосов) -> BULLISH"
+      },
+      {
+        "speaker": "Модератор",
+        "department": "",
+        "type": "moderator",
+        "side": "",
+        "round": 0,
+        "text": "#170 ИТОГ: По USD/CAD: бычьи аргументы победили (1/0). Рекомендация: LONG."
+      }
+    ]
+  }
+]
