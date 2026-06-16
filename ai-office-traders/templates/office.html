@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Office - Gold Trading</title>
+    <link rel="stylesheet" href="/static/office.css">
+</head>
+<body>
+    <div id="app">
+        <div id="office-area">
+            <canvas id="office-canvas"></canvas>
+        </div>
+        <div id="sidebar">
+            <div id="sidebar-header">
+                <span>AI OFFICE</span>
+                <span class="status" id="status-text">Загрузка...</span>
+            </div>
+            <div id="event-feed"></div>
+            <div id="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-label">Баланс</span>
+                    <span class="stat-value" id="stat-balance">$10,000</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">PnL</span>
+                    <span class="stat-value" id="stat-pnl">$0.00</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Позиции</span>
+                    <span class="stat-value" id="stat-positions">0/3</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Win Rate</span>
+                    <span class="stat-value" id="stat-winrate">0%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toolbar">
+        <button class="toolbar-btn active" onclick="runCycle()">Запустить цикл</button>
+        <button class="toolbar-btn" onclick="toggleAuto()">Авто</button>
+    </div>
+
+    <div id="prices-bar"></div>
+
+    <div id="speech-bubble">
+        <div class="speaker"></div>
+        <div class="text"></div>
+    </div>
+
+    <div id="analyst-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <div class="modal-name" id="modal-name"></div>
+                    <div class="modal-role" id="modal-role"></div>
+                </div>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="/static/office.js"></script>
+</body>
+</html>
