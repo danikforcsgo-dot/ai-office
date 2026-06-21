@@ -1,0 +1,49 @@
+{
+  "name": "FVG Retest Entry Engine",
+  "author": "Zeiierman",
+  "url": "https://www.tradingview.com/script/FVG-Retest-Entry-Engine/",
+  "category": "SMC",
+  "description": "Структурированный анализ FVG ретестов: BOS/CHoCH → FVG → armed zone → retest → entry/SL/TP1/TP2/TP3",
+  "indicators_used": ["FVG", "BOS", "CHoCH", "ATR", "Volume", "DI/ADX", "EMA"],
+  "rules": {
+    "entry_buy": [
+      "Bullish BOS/CHoCH подтверждён",
+      "Bullish FVG найден и armed (зона вооружена)",
+      "Цена возвращается к FVG зоне (retest)",
+      "Reaction подтверждает: wick contact / body contact / close within gap",
+      "Volume participation > среднего",
+      "DI+ > DI- (направленная сила)",
+      "HTF bias бычий (EMA fast > EMA slow на старшем TF)",
+      "Setup grade: A или A+"
+    ],
+    "entry_sell": [
+      "Bearish BOS/CHoCH подтверждён",
+      "Bearish FVG найден и armed",
+      "Цена возвращается к FVG зоне",
+      "Bearish reaction: wick/body contact",
+      "Volume participation > среднего",
+      "DI- > DI+",
+      "HTF bias медвежий",
+      "Setup grade: A или A+"
+    ],
+    "exit": [
+      "TP1 = Entry + Risk * TP1_R (по умолчанию 1.5R)",
+      "TP2 = Entry + Risk * TP2_R (по умолчанию 2.0R)",
+      "TP3 = Entry + Risk * TP3_R (по умолчанию 3.0R)",
+      "Move SL to Entry после TP1 (breakeven)"
+    ],
+    "invalidation": [
+      "FVG invalidated: закрытие свечи через зону",
+      "Setup expired: retest не произошёл за N баров",
+      "Structure search replaced: новый BOS/CHoCH"
+    ],
+    "position_sizing": [
+      "SL = FVG boundary ± ATR buffer (Gap-Protected Stop)",
+      "SL = Entry ± ATR * multiplier (Volatility Stop)",
+      "Min stop distance % от цены"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py"
+}

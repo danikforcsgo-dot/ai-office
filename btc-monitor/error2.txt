@@ -1,0 +1,62 @@
+←[32mINFO←[0m:     Will watch for changes in these directories: ['C:\\Users\\1337\\btc-monitor']
+←[32mINFO←[0m:     Uvicorn running on ←[1mhttp://0.0.0.0:8000←[0m (Press CTRL+C to quit)
+←[32mINFO←[0m:     Started reloader process [←[36m←[1m30576←[0m] using ←[36m←[1mStatReload←[0m
+←[32mINFO←[0m:     Started server process [←[36m29016←[0m]
+←[32mINFO←[0m:     Waiting for application startup.
+←[32mINFO←[0m:     Application startup complete.
+←[32mINFO←[0m:     127.0.0.1:61138 - "WebSocket /ws?interval=4h" [accepted]
+←[32mINFO←[0m:     connection open
+←[32mINFO←[0m:     127.0.0.1:61155 - "←[1mGET / HTTP/1.1←[0m" ←[32m200 OK←[0m
+←[32mINFO←[0m:     connection closed
+←[32mINFO←[0m:     127.0.0.1:61155 - "←[1mGET /static/style.css HTTP/1.1←[0m" ←[33m304 Not Modified←[0m
+←[32mINFO←[0m:     127.0.0.1:61155 - "←[1mGET /static/app.js HTTP/1.1←[0m" ←[33m304 Not Modified←[0m
+←[32mINFO←[0m:     127.0.0.1:61158 - "WebSocket /ws?interval=4h" [accepted]
+←[32mINFO←[0m:     connection open
+←[31mERROR←[0m:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 239, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 350, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 169, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 166, in app
+    await func(session)
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 773, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\1337\btc-monitor\main.py", line 449, in websocket_endpoint
+    msg = await ws.receive_text()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1337\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\websockets.py", line 118, in receive_text
+    raise RuntimeError('WebSocket is not connected. Need to call "accept" first.')
+RuntimeError: WebSocket is not connected. Need to call "accept" first.
+
+

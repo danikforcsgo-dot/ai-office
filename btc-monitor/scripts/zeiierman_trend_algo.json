@@ -1,0 +1,36 @@
+{
+  "name": "Trend Algo",
+  "author": "Zeiierman",
+  "url": "https://www.tradingview.com/script/Zeiierman-Trend-Algo/",
+  "category": "Trend",
+  "description": "Определение тренда: multi-timeframe alignment, trend strength, entry zones. Автоматические уровни",
+  "indicators_used": ["EMA", "ATR", "ADX", "Structure", "Volume"],
+  "rules": {
+    "entry_buy": [
+      "Trend Algo BUY: EMA alignment бычий (fast > mid > slow)",
+      "ADX > 25: тренд сильный",
+      "Retest к dynamic support (EMA20) → buy zone",
+      "Volume подтверждает: выше среднего",
+      "HTF alignment: H4/D1 бычий + M15/H1 BUY"
+    ],
+    "entry_sell": [
+      "Trend Algo SELL: EMA alignment медвежий",
+      "ADX > 25: тренд сильный",
+      "Retest к dynamic resistance → sell zone",
+      "HTF alignment: H4/D1 медвежий + M15/H1 SELL"
+    ],
+    "exit": [
+      "Trend reversal: EMA crossover в противоположном направлении",
+      "ADX < 20: тренд слабеет",
+      "Trailing stop срабатывает"
+    ],
+    "invalidation": [
+      "ADX < 20: нет тренда",
+      "EMA sideways: нет alignment",
+      "HTF/LTF конфликт"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "analyst_engine.py:aid=21 (Trend Line) + TV ADX"
+}

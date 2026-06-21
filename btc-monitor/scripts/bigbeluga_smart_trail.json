@@ -1,0 +1,34 @@
+{
+  "name": "Smart Trail & Break Even",
+  "author": "BigBeluga",
+  "url": "https://www.tradingview.com/script/BigBeluga-Smart-Trail/",
+  "category": "Risk Management",
+  "description": "Умный trailing stop + automatic breakeven. Адаптируется к ATR и structure levels",
+  "indicators_used": ["ATR", "Swing High/Low", "Structure", "Trailing Stop"],
+  "rules": {
+    "entry_buy": [
+      "Entry по сигналу → SL = ATR * 1.5 ниже",
+      "Trail start: после 1x ATR прибыли → trail = ATR * 1",
+      "Breakeven: после 1.5x ATR прибыли → SL = entry"
+    ],
+    "entry_sell": [
+      "Entry по сигналу → SL = ATR * 1.5 выше",
+      "Trail start: после 1x ATR прибыли",
+      "Breakeven: после 1.5x ATR"
+    ],
+    "exit": [
+      "Trail срабатывает: цена пересекает trail",
+      "Breakeven: SL = entry → безубыток",
+      "TP1/TP2/TP3: частичное закрытие"
+    ],
+    "position_sizing": [
+      "Risk per trade: 1-2% account",
+      "SL = ATR * 1.5",
+      "TP1 = 1.5x risk, TP2 = 2x risk, TP3 = 3x risk",
+      "Partial close: 33% на TP1, 33% на TP2, 34% на TP3"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "trader.py (trailing stop + breakeven)"
+}

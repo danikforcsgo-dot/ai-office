@@ -1,0 +1,35 @@
+{
+  "name": "Adaptive Swing Timing Engine",
+  "author": "AlgoPoint",
+  "url": "https://www.tradingview.com/script/Adaptive-Swing-Timing-Engine-AlgoPoint/",
+  "category": "Timing",
+  "description": "Анализ времени между свингами, прогноз окон разворота на основе статистических циклов",
+  "indicators_used": ["Swing Detection", "ATR", "Cycle Analysis", "Median", "MAD"],
+  "rules": {
+    "entry_buy": [
+      "Timing window: текущий цикл приближается к историческому развороту",
+      "Bullish cycle memory: бычьи ноги historically быстрее медвежьих",
+      "Confidence score > 60% для timing projection",
+      "Swing low подтверждён (закрытие выше threshold)"
+    ],
+    "entry_sell": [
+      "Timing window: текущий цикл приближается к историческому развороту",
+      "Bearish cycle memory: медвежьи ноги historically быстрее бычьих",
+      "Confidence score > 60%",
+      "Swing high подтверждён"
+    ],
+    "exit": [
+      "Достижение projected timing window",
+      "Новый swing подтверждён в противоположном направлении",
+      "Confidence score падает < 40%"
+    ],
+    "invalidation": [
+      "Timing projection устарела (цена уже развернулась)",
+      "Нет足够的 cycle history для прогноза",
+      "Choppy market: нет четких свингов"
+    ]
+  },
+  "timeframes": ["H1", "H4", "D1"],
+  "implemented": false,
+  "implementation_note": "Уникальный подход: анализ ВРЕМЕНИ между свингами вместо цены. Median + MAD для outlier control"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Momentum Concepts",
+  "author": "AlgoAlpha",
+  "url": "https://www.tradingview.com/script/AlgoAlpha-Momentum/",
+  "category": "Momentum",
+  "description": "Определение импульса: rate of change, momentum divergence, acceleration",
+  "indicators_used": ["ROC", "Momentum", "Divergence", "ATR", "EMA"],
+  "rules": {
+    "entry_buy": [
+      "Positive momentum: ROC > 0 и ускоряется",
+      "Bullish divergence: цена下跌ает, momentum растёт",
+      "EMA alignment: fast EMA > slow EMA + momentum > 0",
+      "ATR expansion: волатильность растёт в направлении тренда"
+    ],
+    "entry_sell": [
+      "Negative momentum: ROC < 0 и ускоряется",
+      "Bearish divergence: цена растёт, momentum падает",
+      "EMA alignment: fast EMA < slow EMA + momentum < 0",
+      "ATR expansion вниз"
+    ],
+    "exit": [
+      "Momentum exhaustion: ROC начинает снижаться",
+      "Divergence на противоположном конце"
+    ],
+    "invalidation": [
+      "Momentum reversal: ROC меняет знак",
+      "EMA crossover в противоположном направлении"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4"],
+  "implemented": true,
+  "implementation_file": "tradingview_data.py (TV momentum indicators)"
+}

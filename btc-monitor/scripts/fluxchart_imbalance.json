@@ -1,0 +1,31 @@
+{
+  "name": "Imbalance Detector",
+  "author": "fluxchart",
+  "url": "https://www.tradingview.com/script/Imbalance-Detector/",
+  "category": "SMC",
+  "description": "Определяет дисбалансы цены: FVG, Order Blocks, Volume Imbalance. Автоматическая оценка силы зоны",
+  "indicators_used": ["FVG", "Order Blocks", "Volume", "ATR"],
+  "rules": {
+    "entry_buy": [
+      "Bullish imbalance: FVG + OB перекрываются → сильная зона",
+      "Imbalance score > 0.7: объём + волатильность + размер зоны",
+      "Цена靠近 imbalance zone → отскок"
+    ],
+    "entry_sell": [
+      "Bearish imbalance: FVG + OB перекрываются → сильная зона",
+      "Imbalance score > 0.7",
+      "Цена靠近 imbalance zone → откат"
+    ],
+    "exit": [
+      "Imbalance заполнен: цена прошла через зону",
+      "Score зоны снижается"
+    ],
+    "invalidation": [
+      "Imbalance invalidated: закрытие через зону",
+      "Новый imbalance перекрывает старый"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py"
+}

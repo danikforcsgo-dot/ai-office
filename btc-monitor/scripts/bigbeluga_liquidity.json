@@ -1,0 +1,31 @@
+{
+  "name": "Liquidity Zones",
+  "author": "BigBeluga",
+  "url": "https://www.tradingview.com/script/Liquidity-Zones/",
+  "category": "SMC",
+  "description": "Визуализация зон ликвидности: BSL (Buy-Side Liquidity), SSL (Sell-Side Liquidity), Equal Highs/Lows",
+  "indicators_used": ["Swing Points", "Equal Highs/Lows", "Volume Profile"],
+  "rules": {
+    "entry_buy": [
+      "Цена достигла SSL зоны (Sell-Side Liquidity) — стопы медведей сняты",
+      "Отскок от SSL с подтверждением (пин-бар, поглощение)",
+      "SSL sweep + displacement = сильный сигнал"
+    ],
+    "entry_sell": [
+      "Цена достигла BSL зоны (Buy-Side Liquidity) — стопы быков сняты",
+      "Откат от BSL после пробоя",
+      "BSL sweep + displacement = сильный сигнал"
+    ],
+    "exit": [
+      "Достижение следующей зоны ликвидности",
+      "Новый sweep в противоположном направлении"
+    ],
+    "invalidation": [
+      "Пробой зоны ликвидности без отскока → зона исчерпана",
+      "Новый Equal High/Low перекрывает старый"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:detect_liquidity()"
+}

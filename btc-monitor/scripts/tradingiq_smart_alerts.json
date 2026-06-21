@@ -1,0 +1,37 @@
+{
+  "name": "Smart Money Alerts Enhanced",
+  "author": "Trading-IQ",
+  "url": "https://www.tradingview.com/script/Trading-IQ-Smart-Alerts/",
+  "category": "SMC",
+  "description": "Улучшенные алерты SMC: OB touch, FVG formation, BOS/CHoCH, Liquidity sweep, Multi-TF confluence",
+  "indicators_used": ["Order Blocks", "FVG", "BOS", "CHoCH", "Liquidity", "Volume", "ATR"],
+  "rules": {
+    "entry_buy": [
+      "Alert: Bullish OB touch + Volume spike",
+      "Alert: Bullish FVG formed + structure alignment",
+      "Alert: Bullish BOS + Multi-TF confirmation",
+      "Alert: SSL sweep + displacement bullish",
+      "Alert: Confluence > 0.7: 3+ SMC factors"
+    ],
+    "entry_sell": [
+      "Alert: Bearish OB touch + Volume spike",
+      "Alert: Bearish FVG formed",
+      "Alert: Bearish BOS + Multi-TF",
+      "Alert: BSL sweep + displacement bearish",
+      "Alert: Confluence > 0.7 bearish"
+    ],
+    "exit": [
+      "Alert: Structure break opposite direction",
+      "Alert: FVG filled",
+      "Alert: TP level reached"
+    ],
+    "invalidation": [
+      "Alert: OB invalidated",
+      "Alert: Setup expired",
+      "Alert: Low volume at signal"
+    ]
+  },
+  "timeframes": ["M5", "M15", "H1", "H4"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py (all SMC functions)"
+}

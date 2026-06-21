@@ -1,0 +1,33 @@
+{
+  "name": "Smart Support & Resistance",
+  "author": "fluxchart",
+  "url": "https://www.tradingview.com/script/fluxchart-Smart-SR/",
+  "category": "Support/Resistance",
+  "description": "Умные уровни S/R: автоматическое определение с учётом объёма, pivots, Fibonacci. Динамическое обновление",
+  "indicators_used": ["Pivots", "Fibonacci", "Volume Profile", "ATR", "Swing High/Low"],
+  "rules": {
+    "entry_buy": [
+      "Цена достигает smart support (Volume POC + Fib 61.8%) → buy",
+      "Pivot low support + ATR buffer → buy zone",
+      "Multiple S/R confluence: 2+ уровня совпадают → сильная зона",
+      "Support + Bullish OB → high-probability buy"
+    ],
+    "entry_sell": [
+      "Цена достигает smart resistance (Volume VAH + Fib 38.2%) → sell",
+      "Pivot high resistance + ATR buffer → sell zone",
+      "Resistance + Bearish OB → high-probability sell"
+    ],
+    "exit": [
+      "Достижение следующего уровня S/R",
+      "Пробой уровня → тренд продолжается"
+    ],
+    "invalidation": [
+      "Пробой уровня закрытием → уровень перестаёт действовать",
+      "Новый pivot перекрывает старый уровень",
+      "Level strength < 0.5 → слабый уровень"
+    ]
+  },
+  "timeframes": ["H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "analyst_engine.py:aid=20 (S/R Hunter)"
+}

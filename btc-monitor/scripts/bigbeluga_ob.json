@@ -1,0 +1,32 @@
+{
+  "name": "Order Block Detector",
+  "author": "BigBeluga",
+  "url": "https://www.tradingview.com/script/Order-Block-Detector/",
+  "category": "SMC",
+  "description": "Автоматическое определение Order Blocks: последние противоположные свечи перед сильным импульсом. Классификация по силе.",
+  "indicators_used": ["Price Action", "Swing High/Low", "ATR"],
+  "rules": {
+    "entry_buy": [
+      "Bullish OB: последняя бычья свеча перед сильным импульсом вниз (зона покупок)",
+      "Цена возвращается к OB зоне → отскок",
+      "OB подтверждён: импульс > 2x ATR",
+      "Strong OB: импульс > 3x ATR"
+    ],
+    "entry_sell": [
+      "Bearish OB: последняя медвежья свеча перед сильным импульсом вверх (зона продаж)",
+      "Цена возвращается к OB зоне → откат",
+      "OB подтверждён: импульс > 2x ATR"
+    ],
+    "exit": [
+      "Цена достигает следующего OB в противоположном направлении",
+      "Пробой OB → тренд продолжается"
+    ],
+    "invalidation": [
+      "Пробой OB закрытием свечи → OB invalidated",
+      "Появление нового OB в противоположном направлении"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:detect_order_blocks()"
+}

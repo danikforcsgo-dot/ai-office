@@ -1,0 +1,38 @@
+{
+  "name": "Mirage Liquidity Sweep Pro",
+  "author": "Jos-ProTrader",
+  "url": "https://www.tradingview.com/script/Mirage-Liquidity-Sweep-Pro-JosProTrader/",
+  "category": "Liquidity",
+  "description": "Детектирует ликвидационные свипы с 5-факторным quality scoring (0-100), CHoCH подтверждением и автоматическим планированием сделок",
+  "indicators_used": ["Liquidity Sweeps", "CHoCH", "Volume", "ATR", "EMA"],
+  "rules": {
+    "entry_buy": [
+      "Bullish liquidity grab: цена пробила swing low и закрылась обратно внутрь",
+      "Wick rejection strength > 60 из 100",
+      "CHoCH подтверждение: минорная структура сломана вверх",
+      "Volume выше среднего при свипе",
+      "HTF bias бычий (цена выше EMA)"
+    ],
+    "entry_sell": [
+      "Bearish liquidity grab: цена пробила swing high и закрылась обратно внутрь",
+      "Wick rejection strength > 60 из 100",
+      "CHoCH подтверждение: минорная структура сломана вниз",
+      "Volume выше среднего при свипе",
+      "HTF bias медвежий (цена ниже EMA)"
+    ],
+    "exit": [
+      "Достижение TP1 (1:1 RR)",
+      "Break-even после TP1",
+      "Достижение TP2 или TP3",
+      "Новый свип в противоположном направлении"
+    ],
+    "invalidation": [
+      "Пробой стоп-лосса за swing wick",
+      "Нет CHoCH подтверждения",
+      "Quality score < 50"
+    ]
+  },
+  "timeframes": ["M15", "M30", "H1", "H4"],
+  "implemented": false,
+  "implementation_note": "Требует детекцию liquidity pools (BSL/SSL), quality scoring с 5 факторами, CHoCH detection"
+}

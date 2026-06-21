@@ -1,0 +1,32 @@
+{
+  "name": "Smart Trail Indicator",
+  "author": "WillyAlgoTrader",
+  "url": "https://www.tradingview.com/script/WillyAlgoTrader-Smart-Trail/",
+  "category": "Risk Management",
+  "description": "Умный trailing stop на основе ATR + structure levels. Адаптируется к волатильности и тренду",
+  "indicators_used": ["ATR", "Trailing Stop", "Structure", "Swing High/Low"],
+  "rules": {
+    "entry_buy": [
+      "Цена выше smart trail → восходящий тренд",
+      "Trail поднялся выше предыдущего значения → тренд усиливается",
+      "Trail距 цены > ATR → тренд здоровый"
+    ],
+    "entry_sell": [
+      "Цена ниже smart trail → нисходящий тренд",
+      "Trail опустился ниже предыдущего значения",
+      "Trail距 цены > ATR"
+    ],
+    "exit": [
+      "Цена пересекает smart trail → разворот",
+      "Trail начинает замедляться → тренд утомляется"
+    ],
+    "position_sizing": [
+      "SL = smart trail (динамический)",
+      "TP = Entry + ATR * 3 (risk:reward = 1:1.5 до 1:3)",
+      "Move SL to breakeven после 1x ATR прибыли"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_note": "trader.py уже использует trailing stop, можно улучшить"
+}

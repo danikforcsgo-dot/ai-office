@@ -1,0 +1,33 @@
+{
+  "name": "Market Structure Breaks",
+  "author": "fluxchart",
+  "url": "https://www.tradingview.com/script/fluxchart-Structure-Breaks/",
+  "category": "SMC",
+  "description": "Определение пробоев структуры: BOS, CHoCH, Internal/External structure. Multi-timeframe анализ",
+  "indicators_used": ["Swing High/Low", "Structure", "ATR", "Volume"],
+  "rules": {
+    "entry_buy": [
+      "External BOS bullish: пробой внешнего swing high → тренд",
+      "Internal CHoCH bullish: разворот внутренней структуры",
+      "Structure break + volume confirmation",
+      "Multi-TF structure alignment"
+    ],
+    "entry_sell": [
+      "External BOS bearish: пробой внешнего swing low",
+      "Internal CHoCH bearish",
+      "Structure break + volume"
+    ],
+    "exit": [
+      "Новый structure break в противоположном направлении",
+      "Internal structure exhaustion"
+    ],
+    "invalidation": [
+      "Fake break: пробой без volume confirmation",
+      "Break closes back → invalid",
+      "Choppy structure: много пересечений"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:detect_bos_choch()"
+}

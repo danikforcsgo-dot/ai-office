@@ -1,0 +1,35 @@
+{
+  "name": "Signals & Overlays",
+  "author": "LuxAlgo",
+  "url": "https://www.tradingview.com/script/LuxAlgo-Signals-Overlays/",
+  "category": "Signals",
+  "description": "Buy/Sell сигналы с оверлеями: автоматические уровни, зоны входа/выхода, тренд-линии. Фильтр по объёму",
+  "indicators_used": ["EMA", "ATR", "Volume", "Structure", "Pivots"],
+  "rules": {
+    "entry_buy": [
+      "BUY signal: EMA crossover + volume confirmation + structure alignment",
+      "Price retests dynamic support (EMA20) → buy",
+      "Signal strength > 0.7 (composite score из EMA + ATR + Volume)",
+      "Trend filter: HTF (H4/D1) бычий → LTF (M15/H1) BUY"
+    ],
+    "entry_sell": [
+      "SELL signal: EMA bearish crossover + volume",
+      "Price retests dynamic resistance (EMA20) → sell",
+      "Signal strength > 0.7 bearish",
+      "HTF медвежий → LTF SELL"
+    ],
+    "exit": [
+      "Противоположный сигнал",
+      "Trailing stop срабатывает",
+      "Достижение Take Profit уровня"
+    ],
+    "invalidation": [
+      "Signal strength < 0.5 → слабый сигнал",
+      "HTF и LTF конфликтуют",
+      "Низкий объём при сигнале"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "tradingview_data.py (TV recommendation) + analyst_engine.py"
+}

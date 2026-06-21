@@ -1,0 +1,26 @@
+{
+  "name": "ICT Kill Zones",
+  "author": "ICT (Inner Circle Trader)",
+  "url": "https://www.tradingview.com/script/ICT-Kill-Zones/",
+  "category": "Session Timing",
+  "description": "Определяет ключевые торговые сессии: Asian, London, New York. Максимальная ликвидность и волатильность в эти периоды.",
+  "indicators_used": ["Time", "Session", "Volume Profile"],
+  "rules": {
+    "entry_buy": [
+      "London Kill Zone (07:00-10:00 UTC): поиск ликвидности ниже lows прошлой сессии",
+      "NY Kill Zone (13:00-16:00 UTC): подтверждение тренда после London",
+      "Asian Kill Zone (00:00-03:00 UTC): накопление перед London"
+    ],
+    "entry_sell": [
+      "Пробой ликвидности выше highs в London KZ",
+      "Откат после NY Open в方向е тренда"
+    ],
+    "invalidation": [
+      "Сигнал вне Kill Zone — пониженная надёжность",
+      "Низкий объём во время сессии"
+    ]
+  },
+  "timeframes": ["M5", "M15", "H1"],
+  "implemented": true,
+  "implementation_note": "analyst #6 (Kill Zone Specialist) уже реализован"
+}

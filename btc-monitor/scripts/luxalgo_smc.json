@@ -1,0 +1,37 @@
+{
+  "name": "Smart Money Concepts (Premium)",
+  "author": "LuxAlgo",
+  "url": "https://www.tradingview.com/script/LuxAlgo-Smart-Money-Concepts/",
+  "category": "SMC",
+  "description": "Premium версия: Order Blocks, FVG, BOS, CHoCH, Liquidation Levels, Session Maps, Internal/External Range, Kill Zones",
+  "indicators_used": ["Price Action", "Swing High/Low", "Volume", "Sessions"],
+  "rules": {
+    "entry_buy": [
+      "Цена отскакивает от Bullish Order Block (последняя бычья свеча перед импульсом вверх)",
+      "Цена заполняет Bullish FVG (где низ текущей свечи > высоты свечи-2)",
+      "CHoCH бычий: первый пробой структуры против нисходящего тренда",
+      "Цена в Discount зоне (< 50% диапазона) + Bullish OB",
+      "Liquidation sweep: стопы быков сняты ниже swing low → разворот"
+    ],
+    "entry_sell": [
+      "Цена отскакивает от Bearish Order Block (последняя медвежья свеча перед импульсом вниз)",
+      "Цена заполняет Bearish FVG (где высота текущей свечи < lows свечи-2)",
+      "CHoCH медвежий: первый пробой структуры против восходящего тренда",
+      "Цена в Premium зоне (> 75% диапазона) + Bearish OB",
+      "Liquidation sweep: стопы медведей сняты выше swing high → разворот"
+    ],
+    "exit": [
+      "Достижение следующей зоны ликвидности (BSL/SSL)",
+      "Новый BOS в противоположном направлении",
+      "Цена достигает Premium/Discount зоны opposite"
+    ],
+    "invalidation": [
+      "Пробой Order Block закрытием свечи",
+      "Полное заполнение FVG",
+      "Новый CHoCH в противоположном направлении"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py"
+}

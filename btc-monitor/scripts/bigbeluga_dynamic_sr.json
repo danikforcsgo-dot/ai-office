@@ -1,0 +1,31 @@
+{
+  "name": "Dynamic Support & Resistance",
+  "author": "BigBeluga",
+  "url": "https://www.tradingview.com/script/BigBeluga-Dynamic-SR/",
+  "category": "Support/Resistance",
+  "description": "Динамические уровни S/R на основе pivots, Fibonacci, Volume Profile. Автоматическое обновление",
+  "indicators_used": ["Pivots", "Fibonacci", "Volume Profile", "ATR"],
+  "rules": {
+    "entry_buy": [
+      "Цена достигает dynamic support (Fib 61.8% + Volume POC) → buy",
+      "Pivot low + ATR-based support → buy zone",
+      "Multiple S/R confluence: 2+ уровня совпадают"
+    ],
+    "entry_sell": [
+      "Цена достигает dynamic resistance (Fib 61.8% + Volume VAH) → sell",
+      "Pivot high + ATR-based resistance → sell zone",
+      "Multiple resistance confluence"
+    ],
+    "exit": [
+      "Достижение следующего уровня S/R",
+      "Пробой уровня → тренд продолжается"
+    ],
+    "invalidation": [
+      "Пробой уровня закрытием свечи → уровень перестаёт действовать",
+      "Новый pivot перекрывает старый уровень"
+    ]
+  },
+  "timeframes": ["H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "analyst_engine.py:aid=20 (S/R Hunter)"
+}

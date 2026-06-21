@@ -1,0 +1,40 @@
+{
+  "name": "Smart Signals Assistant (SSA)",
+  "author": "AlgoAlpha",
+  "url": "https://www.tradingview.com/script/AlgoAlpha-SSA/",
+  "category": "Signals",
+  "description": "Умные сигналы: автоматическое определение точки входа, SL, TP. Confluence scoring. Multi-TF фильтрация",
+  "indicators_used": ["EMA", "RSI", "MACD", "ATR", "Volume", "Structure", "Order Blocks"],
+  "rules": {
+    "entry_buy": [
+      "SSA BUY signal: confluence score > 0.75",
+      "RSI перепродан (<35) + EMA бычий + Volume spike",
+      "Order Block touch + Bullish structure",
+      "Multi-TF alignment: H4/D1 бычий + M15/H1 BUY"
+    ],
+    "entry_sell": [
+      "SSA SELL signal: confluence score > 0.75",
+      "RSI перекуплен (>65) + EMA медвежий",
+      "Bearish OB touch + Bearish structure",
+      "Multi-TF alignment: H4/D1 медвежий + M15/H1 SELL"
+    ],
+    "exit": [
+      "Противоположный SSA signal",
+      "TP уровень достигнут (ATR-based)",
+      "RSI extreme (>80 buy / <20 sell)"
+    ],
+    "invalidation": [
+      "Confluence score < 0.5",
+      "HTF/LTF конфликт",
+      "Нет volume confirmation"
+    ],
+    "position_sizing": [
+      "SL = ATR * 1.5 от entry",
+      "TP = ATR * 3 (R:R = 1:2)",
+      "Max risk per trade: 1-2% account"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4"],
+  "implemented": true,
+  "implementation_file": "tradingview_data.py (TV confluence) + analyst_engine.py"
+}

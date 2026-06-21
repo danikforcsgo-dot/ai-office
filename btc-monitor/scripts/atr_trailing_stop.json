@@ -1,0 +1,29 @@
+{
+  "name": "ATR Trailing Stop",
+  "author": "Various",
+  "url": "https://www.tradingview.com/script/ATR-Trailing-Stop/",
+  "category": "Risk Management",
+  "description": "Динамический trailing stop на основе ATR. Адаптируется к волатильности рынка.",
+  "indicators_used": ["ATR", "Trailing Stop"],
+  "rules": {
+    "entry_buy": [
+      "Цена выше ATR trailing stop — восходящий тренд",
+      "Trailing stop поднялся выше предыдущего значения"
+    ],
+    "entry_sell": [
+      "Цена ниже ATR trailing stop — нисходящий тренд",
+      "Trailing stop опустился ниже предыдущего значения"
+    ],
+    "exit": [
+      "Цена пересекает ATR trailing stop",
+      "Разворот тренда по ATR"
+    ],
+    "position_sizing": [
+      "SL = ATR * 2 от текущей цены",
+      "TP = ATR * 3 (risk:reward = 1:1.5)"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_note": "trader.py уже использует trailing stop"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Trend Market",
+  "author": "erdensedat",
+  "url": "https://www.tradingview.com/script/Trend-Market-erdensedat/",
+  "category": "SMC",
+  "description": "Комплексная система: BOS/CHoCH + Order Blocks + FVG + Ghost Trend Engine + Dynamic TP (Infinite Fibonacci)",
+  "indicators_used": ["Market Structure", "Order Blocks", "FVG", "Ghost Trend", "Fibonacci Extensions"],
+  "rules": {
+    "entry_buy": [
+      "CHoCH бычий: смена нисходящего тренда на восходящий",
+      "BOS бычий: пробой предыдущего lower high",
+      "Цена отскакивает от Bullish Order Block (зона institutional volume)",
+      "Цена заполняет Bullish FVG (дисбаланс в пользу покупателей)",
+      "Ghost Trend line поддерживает восходящее движение"
+    ],
+    "entry_sell": [
+      "CHoCH медвежий: смена восходящего тренда на нисходящий",
+      "BOS медвежий: пробой предыдущего higher low",
+      "Цена отскакивает от Bearish Order Block",
+      "Цена заполняет Bearish FVG (дисбаланс в пользу продавцов)",
+      "Ghost Trend line поддерживает нисходящее движение"
+    ],
+    "exit": [
+      "Достижение Dynamic TP1 (Fibonacci extension)",
+      "Достижение TP2, TP3 (автоматическое расширение)",
+      "Пробой Ghost Trend line (смена тренда)",
+      "Новый CHoCH в противоположном направлении"
+    ],
+    "invalidation": [
+      "Пробой Order Block закрытием свечи",
+      "Полное заполнение FVG",
+      "Новый CHoCH в противоположном направлении",
+      "Пробой Ghost Confirm trendline"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": false,
+  "implementation_note": "Комбинация SMC + Price Action + Dynamic Fibonacci TP. Требует Ghost Trend engine для динамических трендовых линий"
+}

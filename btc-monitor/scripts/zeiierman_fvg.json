@@ -1,0 +1,41 @@
+{
+  "name": "Fair Value Gap Detector",
+  "author": "Zeiierman",
+  "url": "https://www.tradingview.com/script/Zeiierman-FVG/",
+  "category": "SMC",
+  "description": "Определение FVG: 3-candle imbalance, quality scoring, invalidation, armed zone tracking",
+  "indicators_used": ["FVG", "ATR", "Structure", "Volume", "Displacement"],
+  "rules": {
+    "entry_buy": [
+      "Bullish FVG + structure alignment → armed zone",
+      "Price retests armed FVG → entry",
+      "Reaction quality > 0.7: wick/body/close confirmation",
+      "Volume participation > baseline",
+      "Setup grade: A or A+"
+    ],
+    "entry_sell": [
+      "Bearish FVG + structure alignment → armed zone",
+      "Price retests armed FVG → entry",
+      "Reaction quality > 0.7",
+      "Setup grade: A or A+"
+    ],
+    "exit": [
+      "TP1/TP2/TP3 достигнуты",
+      "Breakeven сработал",
+      "Trail сработал"
+    ],
+    "invalidation": [
+      "FVG invalidated: закрытие через opposite boundary",
+      "Setup expired: retest не произошёл",
+      "Grade < minimum: слабый сетап"
+    ],
+    "position_sizing": [
+      "SL = FVG boundary ± ATR buffer",
+      "TP1 = 1.5R, TP2 = 2R, TP3 = 3R",
+      "Partial close на каждом TP"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:detect_fvg()"
+}

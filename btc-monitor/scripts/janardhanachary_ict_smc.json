@@ -1,0 +1,41 @@
+{
+  "name": "ICT + SMC Dashboard",
+  "author": "janardhanachary",
+  "url": "https://www.tradingview.com/script/ICT-SMC-janardhanachary/",
+  "category": "ICT",
+  "description": "Комбинация ICT concepts + SMC + Session Analysis + Order Blocks + Liquidity Sweeps + MSS + AMD (Power of 3)",
+  "indicators_used": ["ICT Concepts", "SMC", "Sessions", "Order Blocks", "Liquidity Sweeps", "MSS", "AMD"],
+  "rules": {
+    "entry_buy": [
+      "ICT Bullish:OTE (Optimal Trade Entry) в зоне 61.8-78.6% Fib",
+      "SMC: Bullish Order Block + FVG confluence",
+      "Session: London/NY kill zone active",
+      "Liquidity sweep: стопы быков сняты ниже swing low",
+      "AMD: Accumulation → Manipulation → Distribution phase",
+      "MSS: Market Structure Shift бычий"
+    ],
+    "entry_sell": [
+      "ICT Bearish:OTE в зоне 61.8-78.6% Fib",
+      "SMC: Bearish Order Block + FVG confluence",
+      "Session: London/NY kill zone active",
+      "Liquidity sweep: стопы медведей сняты выше swing high",
+      "AMD: Distribution phase",
+      "MSS: Market Structure Shift медвежий"
+    ],
+    "exit": [
+      "Достижение liquidity target (BSL/SSL)",
+      "Новый MSS в противоположном направлении",
+      "Смена session (kill zone закончилась)",
+      "AMD phase завершилась"
+    ],
+    "invalidation": [
+      "Пробой Order Block",
+      "Нет kill zone confluence",
+      "AMD phase не подтверждена",
+      "Liquidity sweep не качественный"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4"],
+  "implemented": false,
+  "implementation_note": "Полная ICT+SMC система: Kill Zones + Order Blocks + Liquidity + AMD + MSS"
+}

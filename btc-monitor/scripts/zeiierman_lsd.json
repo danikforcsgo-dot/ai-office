@@ -1,0 +1,31 @@
+{
+  "name": "Liquidity Shift Detection (LSD)",
+  "author": "Zeiierman",
+  "url": "https://www.tradingview.com/script/Liquidity-Shift-Detection/",
+  "category": "SMC",
+  "description": "Определяет зоны ликвидности: Sweep Area (где ликвидность собрана) + LSD Level (где произошло принятие рынка после свипа)",
+  "indicators_used": ["Swing High/Low", "Displacement", "Structure"],
+  "rules": {
+    "entry_buy": [
+      "LSD уровень подтверждён: свип ниже swing low → закрытие выше → принятие вверх",
+      "Цена возвращается к LSD уровню (Sweep Area) → отскок",
+      "Displacement подтверждает принятие: сильная бычья свеча после свипа"
+    ],
+    "entry_sell": [
+      "LSD уровень подтверждён: свип выше swing high → закрытие ниже → принятие вниз",
+      "Цена возвращается к LSD уровню (Sweep Area) → откат",
+      "Displacement подтверждает принятие: сильная медвежья свеча после свипа"
+    ],
+    "exit": [
+      "Цена удаляется от LSD уровня → тренд подтверждён",
+      "Новый LSD уровень в противоположном направлении"
+    ],
+    "invalidation": [
+      "Цена закрывается за пределами Sweep Area без принятия",
+      "Новый swing level перекрывает старый LSD"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:detect_liquidity()"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Order Flow / Volume Profile",
+  "author": "Various",
+  "url": "https://www.tradingview.com/script/Volume-Profile/",
+  "category": "Volume Analysis",
+  "description": "Анализ объёмов по ценовым уровням. POC (Point of Control), VAH (Value Area High), VAL (Value Area Low).",
+  "indicators_used": ["Volume Profile", "POC", "VAH", "VAL", "HVN", "LVN"],
+  "rules": {
+    "entry_buy": [
+      "Цена靠近 VAL (область низкого объёма — сопротивление)",
+      "POC выше текущей цены — бычий bias",
+      "HVN (область высокого объёма) как поддержка"
+    ],
+    "entry_sell": [
+      "Цена靠近 VAH (область высокого объёма — сопротивление)",
+      "POC ниже текущей цены — медвежий bias",
+      "LVN (область низкого объёма) — зона разворота"
+    ],
+    "invalidation": [
+      "Пробой POC с высоким объёмом — смена тренда"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_note": "analyst #15 (Volume Profile Expert) уже реализован"
+}

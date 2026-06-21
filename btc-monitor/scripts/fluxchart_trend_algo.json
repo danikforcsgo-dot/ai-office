@@ -1,0 +1,35 @@
+{
+  "name": "Trend Algo Enhanced",
+  "author": "fluxchart",
+  "url": "https://www.tradingview.com/script/fluxchart-Trend-Algo/",
+  "category": "Trend",
+  "description": "Улучшенный тренд-алгоритм: multi-factor scoring, dynamic levels, session awareness",
+  "indicators_used": ["EMA", "ADX", "ATR", "Volume", "Sessions", "Structure"],
+  "rules": {
+    "entry_buy": [
+      "Trend Score > 0.8: сильный бычий тренд",
+      "EMA alignment + ADX > 25 + Volume spike",
+      "Price retests dynamic EMA support during London/NY",
+      "Structure: Bullish BOS/CHoCH подтверждает"
+    ],
+    "entry_sell": [
+      "Trend Score < -0.8: сильный медвежий тренд",
+      "EMA bearish + ADX > 25",
+      "Price retests dynamic resistance",
+      "Bearish structure"
+    ],
+    "exit": [
+      "Trend Score снижается",
+      "Session end: закрытие позиций",
+      "Trailing stop срабатывает"
+    ],
+    "invalidation": [
+      "Trend Score between -0.3 and 0.3: нет тренда",
+      "Mixed signals across factors",
+      "Low volume"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "analyst_engine.py:aid=21 (Trend) + TV ADX + Sessions"
+}

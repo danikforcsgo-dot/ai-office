@@ -1,0 +1,39 @@
+{
+  "name": "Trinity ML Enhanced Projection",
+  "author": "EMA34TRADER",
+  "url": "https://www.tradingview.com/script/Trinity-ML-Projection-EMA34TRADER/",
+  "category": "ML",
+  "description": "Machine Learning прогноз цен с quadratic regression, ATR filters, Volume Delta, EMA trend, RSI, S/R levels",
+  "indicators_used": ["Quadratic Regression", "ATR", "Volume Delta", "EMA", "RSI", "Support/Resistance"],
+  "rules": {
+    "entry_buy": [
+      "ML projection показывает восходящее движение",
+      "Confidence score > 60% (R-squared)",
+      "EMA trend filter: цена выше EMA (bullish)",
+      "Volume delta: покупатели доминируют (> 55%)",
+      "Цена не пересекает сопротивление вниз"
+    ],
+    "entry_sell": [
+      "ML projection показывает нисходящее движение",
+      "Confidence score > 60%",
+      "EMA trend filter: цена ниже EMA (bearish)",
+      "Volume delta: продавцы доминируют (> 55%)",
+      "Цена не пересекает поддержку вверх"
+    ],
+    "exit": [
+      "Достижение upper/lower ATR band",
+      "Confidence score падает < 40%",
+      "Volume delta разворачивается против позиции",
+      "RSI перекупленность/перепроданность"
+    ],
+    "invalidation": [
+      "Confidence score < 40%",
+      "Цена выходит за ATR bands",
+      "Counter-trend reduction активен",
+      "Пробой S/R уровня в противоположном направлении"
+    ]
+  },
+  "timeframes": ["M5", "M15", "H1", "H4"],
+  "implemented": false,
+  "implementation_note": "ML подход: quadratic regression + Z-score normalization + Pearson correlation для поиска похожих паттернов в истории"
+}

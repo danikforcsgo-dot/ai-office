@@ -1,0 +1,33 @@
+{
+  "name": "Market Structure & Breaks",
+  "author": "BigBeluga",
+  "url": "https://www.tradingview.com/script/BigBeluga-Market-Structure/",
+  "category": "SMC",
+  "description": "Определение рыночной структуры: Higher Highs/Lower Lows, BOS, CHoCH, Swing Points. Автоматические labels",
+  "indicators_used": ["Swing High/Low", "Structure", "ATR"],
+  "rules": {
+    "entry_buy": [
+      "Bullish BOS: пробой предыдущего HH → тренд продолжается",
+      "CHoCH бычий: первый пробой после LH → разворот",
+      "HH + HL sequence: восходящий тренд",
+      "Structure shift: серия LL → LH → HH"
+    ],
+    "entry_sell": [
+      "Bearish BOS: пробой предыдущего LL → тренд продолжается",
+      "CHoCH медвежий: первый пробой после HL → разворот",
+      "LH + LL sequence: нисходящий тренд"
+    ],
+    "exit": [
+      "Новый BOS в противоположном направлении",
+      "CHoCH → смена тренда",
+      "Structure exhaustion: HH/LL sequence прерывается"
+    ],
+    "invalidation": [
+      "Пробой structure level закрытием → level invalid",
+      "Choppy market: много BOS/CHoCH → неопределённость"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:detect_bos_choch()"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Smart Money Concepts (Free)",
+  "author": "LuxAlgo",
+  "url": "https://www.tradingview.com/script/LuxAlgo-Smart-Money-Concepts-Free/",
+  "category": "SMC",
+  "description": "Free версия: Basic Order Blocks, FVG, BOS/CHoCH, Fair Value Gaps. Базовый набор SMC инструментов",
+  "indicators_used": ["Price Action", "Swing High/Low"],
+  "rules": {
+    "entry_buy": [
+      "Bullish Order Block: цена отскакивает от зоны последней бычьей свечи перед импульсом",
+      "Bullish FVG: низ текущей свечи > highs свечи-2 → зона поддержки",
+      "BOS бычий: пробой предыдущего swing high"
+    ],
+    "entry_sell": [
+      "Bearish Order Block: цена отскакивает от зоны последней медвежьей свечи перед импульсом",
+      "Bearish FVG: высота текущей свечи < lows свечи-2 → зона сопротивления",
+      "BOS медвежий: пробой предыдущего swing low"
+    ],
+    "exit": [
+      "Достижение следующего swing point",
+      "Новый BOS в противоположном направлении"
+    ],
+    "invalidation": [
+      "Пробой Order Block закрытием свечи",
+      "Полное заполнение FVG"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py"
+}

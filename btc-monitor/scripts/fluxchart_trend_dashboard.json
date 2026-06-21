@@ -1,0 +1,36 @@
+{
+  "name": "Trend Dashboard",
+  "author": "fluxchart",
+  "url": "https://www.tradingview.com/script/fluxchart-Trend-Dashboard/",
+  "category": "Multi-TF",
+  "description": "Dashboard тренда: EMA alignment, ADX strength, multi-TF confluence. Автоматические сигналы",
+  "indicators_used": ["EMA", "ADX", "RSI", "MACD", "Volume"],
+  "rules": {
+    "entry_buy": [
+      "Dashboard: все TF показывают BUY",
+      "EMA alignment: fast > mid > slow на H4/D1",
+      "ADX > 25: тренд сильный",
+      "RSI 40-60: нет extreme",
+      "Volume > среднего"
+    ],
+    "entry_sell": [
+      "Dashboard: все TF показывают SELL",
+      "EMA alignment bearish",
+      "ADX > 25",
+      "Volume confirmation"
+    ],
+    "exit": [
+      "Dashboard меняет направление",
+      "ADX < 20: тренд слабеет",
+      "RSI extreme (>70 buy / <30 sell)"
+    ],
+    "invalidation": [
+      "Mixed signals: TF конфликтуют",
+      "ADX < 20: нет тренда",
+      "Low volume"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "tradingview_data.py:get_tv_multi_timeframe()"
+}

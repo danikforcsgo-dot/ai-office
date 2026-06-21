@@ -1,0 +1,31 @@
+{
+  "name": "Multi-Timeframe Dashboard",
+  "author": "GainzAlgo",
+  "url": "https://www.tradingview.com/script/Multi-Timeframe-Dashboard/",
+  "category": "Multi-TF",
+  "description": "Dashboard с индикаторами на разных TF: RSI, MACD, EMA, Bollinger Bands. Показывает консенсус",
+  "indicators_used": ["RSI", "MACD", "EMA", "Bollinger Bands", "Stochastic"],
+  "rules": {
+    "entry_buy": [
+      "Все TF показывают BUY: RSI < 30, MACD бычий, цена > EMA",
+      "Majority TF BUY: 3+ из 5 TF бычьи",
+      "HTF (H4/D1) BUY + LTF (M15/H1) BUY = консенсус"
+    ],
+    "entry_sell": [
+      "Все TF показывают SELL: RSI > 70, MACD медвежий, цена < EMA",
+      "Majority TF SELL: 3+ из 5 TF медвежьи",
+      "HTF SELL + LTF SELL = консенсус"
+    ],
+    "exit": [
+      "Смена консенсуса: TF начинают разниться",
+      "HTF меняет направление"
+    ],
+    "invalidation": [
+      "Конфликт TF: HTF BUY + LTF SELL → ожидание",
+      "Нет явного консенсуса"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "tradingview_data.py:get_tv_multi_timeframe()"
+}

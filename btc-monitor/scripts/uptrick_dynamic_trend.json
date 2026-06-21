@@ -1,0 +1,36 @@
+{
+  "name": "Dynamic Trend Matrix",
+  "author": "Uptrick",
+  "url": "https://www.tradingview.com/script/Dynamic-Trend-Matrix-Uptrick/",
+  "category": "Trend",
+  "description": "Multi-factor тренд: EMA structure + ATR bands + trailing engine + candle coloring + TP targets + dashboard",
+  "indicators_used": ["EMA", "ATR", "Trend State", "Pressure Filter", "Trailing Stop"],
+  "rules": {
+    "entry_buy": [
+      "Long signal: цена пробила верхнюю ATR band",
+      "EMA alignment: fast > base > slow (bullish structure)",
+      "Trend pressure подтверждает: EMA structure + smoothed slope согласны",
+      "Trend strength > 0.5 (расстояние fast-slow > ATR * strength)"
+    ],
+    "entry_sell": [
+      "Short signal: цена пробила нижнюю ATR band",
+      "EMA alignment: fast < base < slow (bearish structure)",
+      "Trend pressure подтверждает: EMA structure + smoothed slope согласны",
+      "Trend strength > 0.5"
+    ],
+    "exit": [
+      "Пробой dynamic trail (trailing stop)",
+      "Смена trend state (flip)",
+      "Достижение TP1/TP2/TP3",
+      "EMA structure сломана"
+    ],
+    "invalidation": [
+      "Trend flip в противоположном направлении",
+      "Pressure filter не подтверждает",
+      "Choppy market: нет четкого тренда"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": false,
+  "implementation_note": "Многофакторная система с ATR-based bands, EMA structure, trailing engine и staged TP"
+}

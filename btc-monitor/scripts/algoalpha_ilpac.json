@@ -1,0 +1,33 @@
+{
+  "name": "Institutional Liquidity & Price Action Concepts (ILPAC)",
+  "author": "AlgoAlpha",
+  "url": "https://www.tradingview.com/script/AlgoAlpha-ILPAC/",
+  "category": "SMC",
+  "description": "Институциональная ликвидность и Price Action: определение зон institutional order flow, sweep detection, displacement",
+  "indicators_used": ["Liquidity", "Displacement", "Structure", "Volume", "ATR"],
+  "rules": {
+    "entry_buy": [
+      "Institutional sweep: цена ниже уровня ликвидности → возврат выше → displacement вверх",
+      "Bullish displacement: сильная бычья свеча > 2x ATR после sweep",
+      "Volume spike: объём > 2x среднего при displacement",
+      "Structure shift: CHoCH бычий после sweep"
+    ],
+    "entry_sell": [
+      "Institutional sweep: цена выше уровня ликвидности → возврат ниже → displacement вниз",
+      "Bearish displacement: сильная медвежья свеча > 2x ATR",
+      "Volume spike при displacement",
+      "Structure shift: CHoCH медвежий"
+    ],
+    "exit": [
+      "Достижение следующего liquidity pool",
+      "Displacement exhaustion: объём снижается"
+    ],
+    "invalidation": [
+      "Пробой displacement свечи в противоположном направлении",
+      "Нет volume подтверждения"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:detect_liquidity() + detect_order_blocks()"
+}

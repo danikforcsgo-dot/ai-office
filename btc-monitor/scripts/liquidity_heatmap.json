@@ -1,0 +1,24 @@
+{
+  "name": "Liquidity Heatmap",
+  "author": "Various",
+  "url": "https://www.tradingview.com/script/Liquidity-Heatmap/",
+  "category": "SMC",
+  "description": "Визуализация зон ликвидности: где скоплены стоп-лоссы быков и медведей. Привлекает цену к этим уровням.",
+  "indicators_used": ["Equal Highs", "Equal Lows", "Swing Points", "Volume"],
+  "rules": {
+    "entry_buy": [
+      "Цена достигла зоны SSL (Sell-Side Liquidity) — стопы медведей сняты",
+      "Отскок от зоны ликвидности с подтверждением (пин-бар, поглощение)"
+    ],
+    "entry_sell": [
+      "Цена достигла зоны BSL (Buy-Side Liquidity) — стопы быков сняты",
+      "Откат от зоны ликвидности после пробоя"
+    ],
+    "invalidation": [
+      "Пробой зоны ликвидности без отскока — зона исчерпана"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:detect_liquidity()"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Session Algo",
+  "author": "Zeiierman",
+  "url": "https://www.tradingview.com/script/Zeiierman-Session-Algo/",
+  "category": "Session Timing",
+  "description": "Алгоритмическая торговля по сессиям: автоматические уровни для Asian, London, NY. Kill zone optimization",
+  "indicators_used": ["Sessions", "Volume", "ATR", "Swing High/Low", "Pivots"],
+  "rules": {
+    "entry_buy": [
+      "London open: buy если цена ниже Asian low + volume spike",
+      "NY continuation: buy если тренд от London подтверждён",
+      "London/NY overlap: buy на pullback к dynamic support",
+      "Asian accumulation: buy если накопление + breakout вверх"
+    ],
+    "entry_sell": [
+      "London open: sell если цена выше Asian high + fake breakout",
+      "NY continuation: sell если медвежий тренд",
+      "End of session: sell на profit taking"
+    ],
+    "exit": [
+      "Конец сессии: закрытие позиций",
+      "ATR target достигнут",
+      "Session high/low reached"
+    ],
+    "invalidation": [
+      "Signal вне сессии",
+      "Low volume",
+      "Holiday / Reduced session"
+    ]
+  },
+  "timeframes": ["M5", "M15", "H1"],
+  "implemented": true,
+  "implementation_file": "analyst_engine.py:aid=6 (Kill Zone Specialist)"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Smart Money Confluence",
+  "author": "Trading-IQ",
+  "url": "https://www.tradingview.com/script/Smart-Money-Confluence/",
+  "category": "SMC",
+  "description": "Конфлюенция SMC факторов: OB + FVG + BOS + Liquidity + Premium/Discount. Оценка силы сетапа",
+  "indicators_used": ["Order Blocks", "FVG", "BOS", "CHoCH", "Liquidity", "Premium/Discount", "ATR", "Volume"],
+  "rules": {
+    "entry_buy": [
+      "3+ SMC фактора совпадают: Bullish OB + Bullish FVG + Bullish BOS",
+      "Цена в Discount зоне + Liquidity sweep вниз",
+      "Volume подтверждает: объём > среднего при отскоке",
+      "Confluence score > 0.8"
+    ],
+    "entry_sell": [
+      "3+ SMC фактора совпадают: Bearish OB + Bearish FVG + Bearish BOS",
+      "Цена в Premium зоне + Liquidity sweep вверх",
+      "Volume подтверждает",
+      "Confluence score > 0.8"
+    ],
+    "exit": [
+      "Противоположный confluence сигнал",
+      "Достижение следующей liquidity зоны",
+      "Score конфлюенции снижается ниже 0.3"
+    ],
+    "invalidation": [
+      "Только 1-2 фактора → слабый сетап",
+      "Конфликтующие факторы: Bullish OB + Bearish BOS"
+    ],
+    "position_sizing": [
+      "SL = ATR * 2 от входа",
+      "TP = confluence score * ATR * 3",
+      "Risk:Reward ≥ 1:2"
+    ]
+  },
+  "timeframes": ["H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py"
+}

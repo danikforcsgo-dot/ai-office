@@ -1,0 +1,31 @@
+{
+  "name": "Premium vs Discount Levels",
+  "author": "fluxchart",
+  "url": "https://www.tradingview.com/script/Premium-Discount-Levels/",
+  "category": "SMC",
+  "description": "Определяет Premium (>75%), Equilibrium (50%), Discount (<25%) зоны для оптимальных входов",
+  "indicators_used": ["Swing High/Low", "Range Analysis"],
+  "rules": {
+    "entry_buy": [
+      "Цена в Discount зоне (< 25% диапазона) → оптимальная зона покупок",
+      "Цена достигла Equilibrium (50%) после Discount → подтверждение разворота",
+      "Discount + Bullish OB = высоковероятный вход"
+    ],
+    "entry_sell": [
+      "Цена в Premium зоне (> 75% диапазона) → оптимальная зона продаж",
+      "Цена достигла Equilibrium (50%) после Premium → подтверждение разворота",
+      "Premium + Bearish OB = высоковероятный вход"
+    ],
+    "exit": [
+      "Достижение Equilibrium из Premium/Discount",
+      "Цена возвращается в зону entry"
+    ],
+    "invalidation": [
+      "Цена пробивает Premium/Discount без разворота",
+      "Новый диапазон перекрывает старый"
+    ]
+  },
+  "timeframes": ["H1", "H4", "D1", "W1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:premium_discount_zone()"
+}

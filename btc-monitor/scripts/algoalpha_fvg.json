@@ -1,0 +1,33 @@
+{
+  "name": "FVG Detector",
+  "author": "AlgoAlpha",
+  "url": "https://www.tradingview.com/script/AlgoAlpha-FVG/",
+  "category": "SMC",
+  "description": "Определение Fair Value Gaps: 3-candle imbalance, quality scoring, invalidation tracking",
+  "indicators_used": ["FVG", "ATR", "Volume", "Structure"],
+  "rules": {
+    "entry_buy": [
+      "Bullish FVG: low текущей свечи > high свечи-2",
+      "FVG size > 0.5x ATR → significant gap",
+      "Volume при形成лении FVG > среднего",
+      "Structure alignment: Bullish BOS/CHoCH перед FVG"
+    ],
+    "entry_sell": [
+      "Bearish FVG: high текущей свечи < low свечи-2",
+      "FVG size > 0.5x ATR",
+      "Bearish structure перед FVG"
+    ],
+    "exit": [
+      "FVG заполнен: цена прошла через зону",
+      "FVG invalidated: закрытие через opposite boundary"
+    ],
+    "invalidation": [
+      "FVG size < 0.3x ATR → слишком маленький",
+      "FVG старше 50 баров → устарел",
+      "FVG уже был retested → зона исчерпана"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py:detect_fvg()"
+}

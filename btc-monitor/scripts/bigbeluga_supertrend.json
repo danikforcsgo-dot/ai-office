@@ -1,0 +1,34 @@
+{
+  "name": "Supertrend Indicator",
+  "author": "BigBeluga",
+  "url": "https://www.tradingview.com/script/BigBeluga-Supertrend/",
+  "category": "Trend",
+  "description": "Улучшенный Supertrend: multi-factor (ATR + EMA + Volume). Автоматические уровни SL/TP",
+  "indicators_used": ["ATR", "Supertrend", "EMA", "Volume"],
+  "rules": {
+    "entry_buy": [
+      "Supertrend flipped BUY + цена > Supertrend line",
+      "EMA alignment: fast > slow + Supertrend BUY",
+      "Volume > среднего при flip",
+      "ATR expansion в направлении тренда"
+    ],
+    "entry_sell": [
+      "Supertrend flipped SELL + цена < Supertrend line",
+      "EMA bearish + Supertrend SELL",
+      "Volume confirmation"
+    ],
+    "exit": [
+      "Supertrend flip в противоположном направлении",
+      "Цена пересекает Supertrend line",
+      "Trailing stop от Supertrend"
+    ],
+    "invalidation": [
+      "Supertrend flip в choppy market",
+      "Нет volume confirmation",
+      "ATR < среднего → слабый тренд"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_note": "Можно добавить в analyst_engine.py:aid=21 (Trend Line)"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Session & Kill Zones Tracker",
+  "author": "BigBeluga",
+  "url": "https://www.tradingview.com/script/BigBeluga-Session-Tracker/",
+  "category": "Session Timing",
+  "description": "Трекер торговых сессий: Asian, London, NY, overlap. Показывает волатильность и объём по сессиям",
+  "indicators_used": ["Sessions", "Volume", "ATR", "Price Action"],
+  "rules": {
+    "entry_buy": [
+      "London open (07:00-10:00 UTC): поиск ликвидности ниже lows → buy",
+      "NY open (13:00-16:00 UTC): подтверждение тренда от London",
+      "London/NY overlap (13:00-16:00 UTC): максимальная ликвидность",
+      "Asian accumulation (00:00-03:00 UTC): накопление перед London"
+    ],
+    "entry_sell": [
+      "London open: пробой highs с low volume → sell",
+      "NY continuation: медвежий тренд продолжается",
+      "End of NY session: profit taking → sell"
+    ],
+    "exit": [
+      "Конец сессии: закрытие позиций",
+      "Низкий объём вне сессий",
+      "Достижение ATR-множителя"
+    ],
+    "invalidation": [
+      "Сигнал вне Kill Zone",
+      "Низкий объём во время сессии",
+      "Сессия неактивна (holiday)"
+    ]
+  },
+  "timeframes": ["M5", "M15", "H1"],
+  "implemented": true,
+  "implementation_note": "analyst #6 уже реализован, можно улучшить"
+}

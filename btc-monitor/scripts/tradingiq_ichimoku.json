@@ -1,0 +1,33 @@
+{
+  "name": "Ichimoku Cloud Enhanced",
+  "author": "Trading-IQ",
+  "url": "https://www.tradingview.com/script/Trading-IQ-Ichimoku/",
+  "category": "Trend",
+  "description": "Улучшенный Ichimoku: Tenkan-Sen, Kijun-Sen, Senkou Span A/B (облако), Chikou Span. Мульти-TF подтверждение",
+  "indicators_used": ["Ichimoku", "EMA", "ATR"],
+  "rules": {
+    "entry_buy": [
+      "Цена > облака (Senkou Span A и B)",
+      "Tenkan > Kijun (бычий кроссовер)",
+      "Chikou Span > цена 26 периодов назад",
+      "Облако бычье (Senkou A > Senkou B)"
+    ],
+    "entry_sell": [
+      "Цена < облака",
+      "Tenkan < Kijun (медвежий кроссовер)",
+      "Chikou Span < цена 26 периодов назад",
+      "Облако медвежье"
+    ],
+    "exit": [
+      "Цена приближается к облаку снизу/сверху",
+      "Tenkan/Kijun crossover в противоположном направлении"
+    ],
+    "invalidation": [
+      "Цена внутри облака → нет сигнала",
+      "Облако thin (Senkou A ≈ Senkou B) → неопределённость"
+    ]
+  },
+  "timeframes": ["H4", "D1", "W1"],
+  "implemented": true,
+  "implementation_file": "analyst_engine.py:aid=16 (уже есть Ichimoku)"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Price Action Concepts",
+  "author": "LuxAlgo",
+  "url": "https://www.tradingview.com/script/LuxAlgo-Price-Action-Concepts/",
+  "category": "Price Action",
+  "description": "Premium PA: Inside Bars, Pin Bars, Engulfing, Fake Breakouts, Trap Patterns. Контекстная фильтрация по тренду",
+  "indicators_used": ["Price Action", "ATR", "Volume", "Trend", "Swing High/Low"],
+  "rules": {
+    "entry_buy": [
+      "Bullish Pin Bar на support + volume spike → buy",
+      "Bullish Engulfing после downtrend + ATR expansion → buy",
+      "Fake Breakout below support → buy (ловим ложный пробой)",
+      "Inside Bar breakout вверх после consolidation → buy",
+      "Trap Pattern: бычий паттерн на resistance → fake → потом реальный пробой"
+    ],
+    "entry_sell": [
+      "Bearish Pin Bar на resistance + volume spike → sell",
+      "Bearish Engulfing после uptrend → sell",
+      "Fake Breakout above resistance → sell",
+      "Inside Bar breakout вниз → sell"
+    ],
+    "exit": [
+      "Противоположный паттерн",
+      "Достижение ATR-множителя от entry",
+      "Trailing stop срабатывает"
+    ],
+    "invalidation": [
+      "Паттерн вне контекста (нет тренда/уровня)",
+      "Low volume при формировании",
+      "Паттерн на внутреннем TF без подтверждения HTF"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4"],
+  "implemented": true,
+  "implementation_file": "analyst_engine.py:aid=19 (Price Action Trader)"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Strong SD Magnet",
+  "author": "LuxAlgo",
+  "url": "https://www.tradingview.com/script/Strong-SD-Magnet-LuxAlgo/",
+  "category": "Supply/Demand",
+  "description": "Supply/Demand Magnet System: детектирует зоны S/D, quality scoring 0-10, magnet pulls к целевым уровням",
+  "indicators_used": ["Supply Zones", "Demand Zones", "ATR", "Volume", "Rejection Wicks"],
+  "rules": {
+    "entry_buy": [
+      "Magnet pull от supply к demand зоне",
+      "Demand zone score > 7 из 10",
+      "Zone status: FRESH (не тестировалась)",
+      "Wick rejection подтверждает отскок",
+      "Volume подтверждает импульс"
+    ],
+    "entry_sell": [
+      "Magnet pull от demand к supply зоне",
+      "Supply zone score > 7 из 10",
+      "Zone status: FRESH",
+      "Wick rejection подтверждает отскок",
+      "Volume подтверждает импульс"
+    ],
+    "exit": [
+      "Достижение целевой magnet zone",
+      "Zone status меняется на TESTED",
+      "Новый magnet pull в противоположном направлении"
+    ],
+    "invalidation": [
+      "Zone status: INVALID (пробита)",
+      "Magnet pull strength < 3 из 10",
+      "Цена закрылась за пределами зоны"
+    ]
+  },
+  "timeframes": ["M5", "M15", "M30", "H1"],
+  "implemented": false,
+  "implementation_note": "Supply/Demand с ATR-based зонами и magnet logic. Zone lifecycle: FRESH → TESTED → INVALID"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Candlestick Pattern Recognition",
+  "author": "fluxchart",
+  "url": "https://www.tradingview.com/script/fluxchart-Candlestick/",
+  "category": "Price Action",
+  "description": "Распознавание свечных паттернов: Hammer, Engulfing, Doji, Morning Star, Shooting Star + контекст",
+  "indicators_used": ["Candlestick Patterns", "ATR", "Volume", "Trend"],
+  "rules": {
+    "entry_buy": [
+      "Hammer на support + volume spike → buy",
+      "Bullish Engulfing после downtrend → buy",
+      "Morning Star на Fib 61.8% → buy",
+      "Doji после сильного движения → ожидание подтверждения"
+    ],
+    "entry_sell": [
+      "Shooting Star на resistance + volume spike → sell",
+      "Bearish Engulfing после uptrend → sell",
+      "Evening Star на Fib 61.8% → sell",
+      "Long-legged Doji → разворот"
+    ],
+    "exit": [
+      "Противоположный паттерн",
+      "Достижение уровня S/R"
+    ],
+    "invalidation": [
+      "Паттерн вне контекста (нет тренда/уровня)",
+      "Low volume при формировании паттерна"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "analyst_engine.py:aid=19 и aid=23"
+}

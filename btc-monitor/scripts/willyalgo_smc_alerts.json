@@ -1,0 +1,33 @@
+{
+  "name": "Smart Money Alerts",
+  "author": "WillyAlgoTrader",
+  "url": "https://www.tradingview.com/script/Smart-Money-Alerts/",
+  "category": "SMC",
+  "description": "Алерты на SMC события: Order Block touch, FVG formation, BOS/CHoCH, Liquidity sweep",
+  "indicators_used": ["Price Action", "Swing High/Low", "Volume"],
+  "rules": {
+    "entry_buy": [
+      "Alert: Bullish OB touch — цена достигла бычьего Order Block",
+      "Alert: Bullish FVG formed — образовался бычий Fair Value Gap",
+      "Alert: Bullish BOS — бычий пробой структуры",
+      "Alert: SSL sweep — sell-side ликвидность собрана"
+    ],
+    "entry_sell": [
+      "Alert: Bearish OB touch — цена достигла медвежьего Order Block",
+      "Alert: Bearish FVG formed — образовался медвежий Fair Value Gap",
+      "Alert: Bearish BOS — медвежий пробой структуры",
+      "Alert: BSL sweep — buy-side ликвидность собрана"
+    ],
+    "exit": [
+      "Alert: Structure break opposite direction",
+      "Alert: FVG filled — зона заполнена"
+    ],
+    "invalidation": [
+      "Alert: OB invalidated — Order Block пробит",
+      "Alert: Setup expired — время жизни зоны истекло"
+    ]
+  },
+  "timeframes": ["M5", "M15", "H1", "H4"],
+  "implemented": true,
+  "implementation_file": "smc_analysis.py"
+}

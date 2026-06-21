@@ -1,0 +1,33 @@
+{
+  "name": "Volume Profile Indicator",
+  "author": "Trading-IQ",
+  "url": "https://www.tradingview.com/script/Volume-Profile-Indicator/",
+  "category": "Volume Analysis",
+  "description": "Volume Profile: POC, VAH, VAL, HVN, LVN. Определяет зоны наибольшего/наименьшего объёма",
+  "indicators_used": ["Volume Profile", "POC", "VAH", "VAL", "HVN", "LVN"],
+  "rules": {
+    "entry_buy": [
+      "Цена靠近 VAL (Value Area Low) → зона поддержки",
+      "POC выше текущей цены → бычий bias (рынок хочет быть выше POC)",
+      "HVN (High Volume Node) как поддержка",
+      "LVN (Low Volume Node) → зона быстрого прохождения"
+    ],
+    "entry_sell": [
+      "Цена靠近 VAH (Value Area High) → зона сопротивления",
+      "POC ниже текущей цены → медвежий bias",
+      "HVN как сопротивление",
+      "LVN → зона разворота"
+    ],
+    "exit": [
+      "Достижение POC из зоны VAH/VAL",
+      "Пробой POC с высоким объёмом → смена тренда"
+    ],
+    "invalidation": [
+      "Пробой POC без объёма → ложный сигнал",
+      "Цена остаётся внутри Value Area → консолидация"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "analyst_engine.py:aid=15"
+}

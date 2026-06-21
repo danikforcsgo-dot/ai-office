@@ -1,0 +1,31 @@
+{
+  "name": "Divergence Detector",
+  "author": "GainzAlgo",
+  "url": "https://www.tradingview.com/script/GainzAlgo-Divergence/",
+  "category": "Divergence",
+  "description": "Определение дивергенций: Regular Bullish/Bearish, Hidden Bullish/Bearish на RSI, MACD, Stochastic",
+  "indicators_used": ["RSI", "MACD", "Stochastic", "Swing High/Low"],
+  "rules": {
+    "entry_buy": [
+      "Regular Bullish Divergence: цена下跌ает, RSI/MACD растёт → разворот вверх",
+      "Hidden Bullish Divergence: цена растёт, RSI/MACD падает → продолжение тренда вверх",
+      "Bullish divergence на multiple indicators: RSI + MACD совпадают"
+    ],
+    "entry_sell": [
+      "Regular Bearish Divergence: цена растёт, RSI/MACD падает → разворот вниз",
+      "Hidden Bearish Divergence: цена下跌ает, RSI/MACD растёт → продолжение тренда вниз",
+      "Bearish divergence на multiple indicators"
+    ],
+    "exit": [
+      "Divergence resolved: индикатор вернулся к цене",
+      "Противоположная divergence"
+    ],
+    "invalidation": [
+      "Weak divergence: расхождение < 5% → игнорировать",
+      "Divergence вне контекста (нет тренда)"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_note": "analyst_engine.py использует TV RSI/MACD — можно добавить divergence detection"
+}

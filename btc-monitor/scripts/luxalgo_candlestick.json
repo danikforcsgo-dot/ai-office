@@ -1,0 +1,37 @@
+{
+  "name": "Advanced Candlestick Patterns",
+  "author": "LuxAlgo",
+  "url": "https://www.tradingview.com/script/LuxAlgo-Candlestick/",
+  "category": "Price Action",
+  "description": "Продвинутое распознавание свечных паттернов: 40+ паттернов, контекстная фильтрация, multi-TF подтверждение",
+  "indicators_used": ["Candlestick Patterns", "ATR", "Volume", "Trend", "Swing High/Low"],
+  "rules": {
+    "entry_buy": [
+      "Hammer + Bullish Engulfing на support → strong buy",
+      "Morning Star + Volume spike → buy",
+      "Three White Soldiers → continuation buy",
+      "Piercing Line после downtrend → buy",
+      "Doji + следующая бычья свеча → buy"
+    ],
+    "entry_sell": [
+      "Shooting Star + Bearish Engulfing на resistance → strong sell",
+      "Evening Star + Volume spike → sell",
+      "Three Black Crows → continuation sell",
+      "Dark Cloud Cover → sell",
+      "Doji + следующая медвежья свеча → sell"
+    ],
+    "exit": [
+      "Противоположный сильный паттерн",
+      "Достижение уровня S/R",
+      "Trailing stop"
+    ],
+    "invalidation": [
+      "Паттерн вне контекста (нет тренда/уровня)",
+      "Low volume",
+      "Single candle pattern без confirmation"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "technical_analysis.py:detect_candlestick_patterns()"
+}

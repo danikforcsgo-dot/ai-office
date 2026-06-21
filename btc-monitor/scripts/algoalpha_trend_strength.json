@@ -1,0 +1,36 @@
+{
+  "name": "Trend Strength Dashboard",
+  "author": "AlgoAlpha",
+  "url": "https://www.tradingview.com/script/AlgoAlpha-Trend-Strength/",
+  "category": "Multi-TF",
+  "description": "Dashboard силы тренда: EMA slope, ADX, Volume momentum, Multi-TF alignment score",
+  "indicators_used": ["EMA", "ADX", "Volume", "RSI", "ATR"],
+  "rules": {
+    "entry_buy": [
+      "Trend Strength > 0.7: сильный бычий тренд",
+      "EMA slope > 0.5: бычий наклон",
+      "ADX > 25: тренд подтверждён",
+      "Volume momentum > среднего",
+      "Multi-TF alignment: все TF бычьи"
+    ],
+    "entry_sell": [
+      "Trend Strength < -0.7: сильный медвежий тренд",
+      "EMA slope < -0.5",
+      "ADX > 25",
+      "Multi-TF alignment bearish"
+    ],
+    "exit": [
+      "Trend Strength снижается",
+      "ADX < 20: тренд слабеет",
+      "EMA crossover"
+    ],
+    "invalidation": [
+      "Trend Strength между -0.3 и 0.3: нет тренда",
+      "Mixed signals",
+      "Low volume"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_file": "tradingview_data.py (TV ADX + EMA) + analyst_engine.py"
+}

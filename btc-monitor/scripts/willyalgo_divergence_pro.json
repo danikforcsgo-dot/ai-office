@@ -1,0 +1,36 @@
+{
+  "name": "Divergence Detector Pro",
+  "author": "WillyAlgoTrader",
+  "url": "https://www.tradingview.com/script/WillyAlgoTrader-Divergence/",
+  "category": "Divergence",
+  "description": "Продвинутое определение дивергенций: Regular/Hidden на RSI, MACD, Stochastic. Multi-indicator confluence",
+  "indicators_used": ["RSI", "MACD", "Stochastic", "Swing High/Low", "ATR"],
+  "rules": {
+    "entry_buy": [
+      "Regular Bullish Divergence: цена下跌ает, RSI/MACD растёт",
+      "Hidden Bullish Divergence: продолжение тренда вверх",
+      "Multi-indicator divergence: RSI + MACD совпадают",
+      "Divergence на support level → high probability",
+      "Volume spike при развороте"
+    ],
+    "entry_sell": [
+      "Regular Bearish Divergence: цена растёт, RSI/MACD падает",
+      "Hidden Bearish Divergence",
+      "Multi-indicator divergence bearish",
+      "Divergence на resistance"
+    ],
+    "exit": [
+      "Divergence resolved: индикатор вернулся к цене",
+      "Противоположная divergence",
+      "Trailing stop"
+    ],
+    "invalidation": [
+      "Weak divergence: расхождение < 5%",
+      "Divergence вне контекста",
+      "Single indicator only: нужен confluence"
+    ]
+  },
+  "timeframes": ["M15", "H1", "H4", "D1"],
+  "implemented": true,
+  "implementation_note": "analyst_engine.py использует TV RSI/MACD — можно добавить divergence"
+}
